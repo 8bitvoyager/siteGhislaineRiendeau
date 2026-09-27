@@ -1,0 +1,13 @@
+/* Essai A · Cimaise : les toiles à l’échelle sur un mur d’exposition. */
+.cimaise { position: relative; background: #e8e3d9; background-image: radial-gradient(ellipse 70% 60% at 50% 0%, #f4f0e8 0%, transparent 70%); padding-block: clamp(40px, 5vw, 80px) clamp(56px, 7vw, 110px); overflow: hidden; }
+.cimaise::before { content: ''; position: absolute; inset: auto 0 0; height: 22px; background: linear-gradient(#d9d2c5, #cfc7b8); box-shadow: inset 0 1px 0 #f4f0e8; }
+.cimaise-echelle { display: flex; align-items: center; gap: 14px; margin-bottom: clamp(36px, 4vw, 60px); font-family: var(--sans); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--stone); }
+.cimaise-echelle i { display: block; height: 7px; border: 1px solid var(--stone); border-top: 0; }
+.cimaise-mur { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(48px, 5vw, 88px) clamp(40px, 4.5vw, 80px); }
+.cimaise-oeuvre { margin: 0; display: grid; justify-items: center; gap: 18px; }
+.cimaise-oeuvre button { padding: 0; border: 0; background: none; cursor: zoom-in; }
+.cimaise-oeuvre img { display: block; max-width: none; box-shadow: 0 1px 1px #0000001f, 0 14px 22px -12px #1b140c80, 0 28px 40px -30px #1b140c66; transition: transform .35s, box-shadow .35s; }
+.cimaise-oeuvre button:hover img, .cimaise-oeuvre button:focus-visible img { transform: translateY(-4px); box-shadow: 0 1px 1px #0000001f, 0 22px 30px -14px #1b140c8c, 0 40px 56px -34px #1b140c73; }
+.cartel { min-width: 120px; max-width: 200px; padding: 8px 12px 9px; background: #f7f4ee; box-shadow: 0 1px 2px #0000001a; text-align: left; }
+.cartel p:first-child { font-size: 16px; font-style: italic; line-height: 1.15; }
+.cartel p:last-child { margin-top: 4px; font-family: var(--sans); font-size: 10px; letter-spacing: .06em; color: var(--stone); }

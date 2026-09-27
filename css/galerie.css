@@ -1,0 +1,37 @@
+/* Galerie : en-tête, onglets de séries et visionneuse communs aux mises en page. */
+.galerie-entete { display: grid; gap: 18px; padding-block: clamp(32px, 4vw, 64px) clamp(20px, 2.5vw, 32px); }
+.galerie-entete .page-headline { margin-top: 12px; }
+.galerie-entete .page-lede { margin-top: 0; }
+.galerie-onglets { display: flex; flex-wrap: wrap; gap: 6px 34px; margin-top: 12px; border-bottom: 1px solid #182b3926; }
+.galerie-onglets a { position: relative; display: grid; gap: 2px; padding-block: 14px; }
+.galerie-onglets span { font-size: clamp(19px, 1.5vw, 23px); line-height: 1.1; }
+.galerie-onglets small { font-family: var(--sans); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--stone); }
+.galerie-onglets a::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform .25s; }
+.galerie-onglets a[aria-current]::after, .galerie-onglets a:hover::after { transform: scaleX(1); }
+.galerie-onglets a:hover span { color: var(--rust); }
+.galerie-oeuvre { cursor: zoom-in; }
+
+.visionneuse { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: #0e161ce6; color: #f3efe6; }
+.visionneuse::backdrop { background: #0e161c; }
+.visionneuse-ouverte { overflow: hidden; }
+.visionneuse-cadre { position: relative; height: 100%; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 320px); align-items: center; gap: 32px; padding: 56px 72px; }
+.visionneuse-oeuvre { margin: 0; height: 100%; display: grid; place-items: center; min-height: 0; }
+.visionneuse-oeuvre img { max-width: 100%; max-height: calc(100dvh - 112px); width: auto; height: auto; object-fit: contain; box-shadow: 0 30px 60px -30px #000; }
+.visionneuse-infos { display: grid; gap: 10px; align-content: center; }
+.visionneuse-compte { font-family: var(--sans); font-size: 11px; letter-spacing: .16em; color: #f3efe699; font-variant-numeric: tabular-nums; }
+.visionneuse-titre { font-size: clamp(30px, 2.6vw, 42px); font-weight: 400; line-height: 1.05; letter-spacing: -.02em; text-transform: none; }
+.visionneuse-format { font-style: italic; font-size: 20px; color: #f3efe6b3; }
+.visionneuse-contact { margin-top: 18px; justify-self: start; padding-bottom: 6px; border-bottom: 1px solid #f3efe666; font-family: var(--sans); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.visionneuse-contact:hover { border-color: #f3efe6; }
+.visionneuse-bouton { position: absolute; width: 48px; height: 48px; display: grid; place-items: center; background: transparent; color: inherit; border: 1px solid #f3efe640; border-radius: 50%; font-size: 18px; cursor: pointer; transition: background .2s; }
+.visionneuse-bouton:hover { background: #f3efe61a; }
+.visionneuse-precedent { left: 14px; top: 50%; transform: translateY(-50%); }
+.visionneuse-suivant { right: 14px; top: 50%; transform: translateY(-50%); }
+.visionneuse-fermer { right: 14px; top: 14px; }
+@media (max-width: 800px) {
+  .visionneuse-cadre { grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) auto; padding: 64px 16px 24px; gap: 18px; }
+  .visionneuse-oeuvre img { max-height: calc(100dvh - 260px); }
+  .visionneuse-precedent, .visionneuse-suivant { top: auto; bottom: 18px; transform: none; }
+  .visionneuse-infos { padding-inline: 56px; text-align: center; justify-items: center; }
+  .visionneuse-contact { justify-self: center; }
+}

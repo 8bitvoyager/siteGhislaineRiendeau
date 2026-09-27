@@ -85,9 +85,9 @@ Le texte complet de la page Démarche artistique, avec la citation de Picasso, p
 
 Le hero utilise désormais `reference/ref-22septembre/header-22sept-v2.png`, optimisé dans `assets/images/hero/header-22sept-v2.webp` (WebP qualité 90). La citation, les thèmes et la signature sont intégrés à cette image ; une transcription accessible remplace leurs doublons HTML visibles. La navigation est placée au-dessus pour préserver le texte de la composition.
 
-### Version actuelle — header-22sept-v3
+### Version actuelle — header-22sept-v4
 
-Le hero utilise `reference/ref-22septembre/header-22sept-v3.png`, optimisé en `assets/images/hero/header-22sept-v3.webp` (qualité 90). Une seule image commence en haut de page derrière le header superposé sur ordinateur. Seul un voile CSS clair assure la lisibilité de la navigation ; aucune image de raccord n’est ajoutée.
+Le hero utilise `reference/ref-22septembre/header-22sept-v4.png` (26 septembre 2026 : visage de l’artiste légèrement retouché par l’utilisateur à partir de la v3), optimisé en `assets/images/hero/header-22sept-v4.webp` (qualité 90). Une seule image commence en haut de page derrière le header superposé sur ordinateur. Seul un voile CSS clair assure la lisibilité de la navigation ; aucune image de raccord n’est ajoutée.
 
 ## Pages Événements et Médias (26 septembre 2026)
 

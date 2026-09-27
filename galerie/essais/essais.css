@@ -1,0 +1,37 @@
+/* Essais de galerie : barre flottante pour comparer les quatre styles. À retirer une fois le style choisi. */
+.essais-bascule { position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 30; transform: translateX(-50%); display: flex; gap: 4px; padding: 5px; background: #182b39f2; border-radius: 999px; box-shadow: 0 14px 30px -14px #0b1a24; max-width: calc(100vw - 24px); overflow-x: auto; }
+.essais-bascule a { padding: 9px 14px; border-radius: 999px; color: #f3efe6cc; font-family: var(--sans); font-size: 12px; white-space: nowrap; }
+.essais-bascule a b { font-weight: 500; margin-right: 4px; color: #d2a86f; }
+.essais-bascule a:hover { color: #f3efe6; }
+.essais-bascule a[aria-current] { background: #f3efe6; color: var(--ink); }
+.essais-bascule a[aria-current] b { color: var(--rust); }
+.page-galerie .site-footer { padding-bottom: 90px; }
+.essais-bascule .essais-retour { color: #f3efe6; border-right: 1px solid #f3efe633; border-radius: 999px 0 0 999px; margin-right: 2px; }
+
+/* Page /galerie/ : note à Ghislaine et choix du style. */
+.choix-intro { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(32px, 5vw, 90px); align-items: start; padding-block: clamp(36px, 5vw, 80px) clamp(32px, 4vw, 56px); }
+.choix-serie { margin-top: 22px; padding: 10px 14px; background: var(--ivory); font-size: 18px; font-style: italic; color: var(--blue); }
+.note-ghislaine { position: relative; display: grid; gap: 14px; padding: clamp(24px, 3vw, 40px); background: #fffdf8; border: 1px solid #182b391f; box-shadow: 0 22px 44px -32px #182b3999; transform: rotate(-.6deg); }
+.note-ghislaine::before { content: ''; position: absolute; top: -12px; left: 50%; width: 96px; height: 24px; transform: translateX(-50%) rotate(2deg); background: #d9cdb4b3; }
+.note-ghislaine h2 { font-family: var(--handwritten); font-size: clamp(28px, 2.4vw, 36px); font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--rust); }
+.note-ghislaine p { font-size: 19px; line-height: 1.45; }
+.note-signature { font-family: var(--handwritten); font-size: 26px; color: var(--rust); text-align: right; }
+.choix-grille { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(20px, 2.4vw, 36px); padding-bottom: clamp(48px, 6vw, 90px); }
+.choix { display: grid; gap: 10px; align-content: start; }
+.choix-image { aspect-ratio: 4 / 3; overflow: hidden; background: var(--ivory); }
+.choix-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+.choix:hover .choix-image img { transform: scale(1.04); }
+.choix-lettre { margin-top: 6px; font-family: var(--sans); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--ochre); }
+.choix h2 { font-size: clamp(28px, 2.3vw, 36px); font-weight: 400; line-height: 1.05; letter-spacing: -.02em; text-transform: none; }
+.choix p { font-size: 18px; line-height: 1.4; }
+.choix-force { font-style: italic; color: var(--stone); }
+.choix .text-link { justify-self: start; margin-top: 4px; }
+.choix:hover .text-link { color: var(--rust); }
+.choix-verifier { background: var(--ivory); }
+.choix-verifier-inner { padding-block: clamp(36px, 4vw, 60px); display: grid; gap: 18px; }
+.choix-verifier h2 { font-size: clamp(26px, 2.2vw, 34px); font-weight: 400; letter-spacing: -.02em; text-transform: none; }
+.choix-verifier ul { margin: 0; padding-left: 20px; display: grid; gap: 10px; max-width: 80ch; font-size: 18px; line-height: 1.4; }
+.choix-verifier strong { font-weight: 500; }
+@media (max-width: 1100px) { .choix-grille { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 900px) { .choix-intro { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .choix-grille { grid-template-columns: 1fr; } .note-ghislaine { transform: none; } }

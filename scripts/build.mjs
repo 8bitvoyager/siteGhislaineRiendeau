@@ -1,4 +1,4 @@
-import { mkdir, copyFile, readdir, readFile, rm } from 'node:fs/promises';
+import { mkdir, copyFile, cp, readdir, readFile, rm } from 'node:fs/promises';
 import path from 'node:path';
 
 // Liste explicite : ni références, ni originaux, ni outils dans les assets publiés.
@@ -29,5 +29,9 @@ for (const image of manifest) {
   const target = path.join(output, image.local);
   await mkdir(path.dirname(target), { recursive: true });
   await copyFile(path.join(root, image.local), target);
+}
+// Galerie : pages, données et images générées par scripts/galerie-images.mjs.
+for (const folder of ['galerie', 'assets/images/galerie']) {
+  await cp(path.join(root, folder), path.join(output, folder), { recursive: true });
 }
 console.log(`Site statique préparé dans dist/ : ${manifest.length} images locales.`);

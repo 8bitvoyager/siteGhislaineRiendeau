@@ -1,0 +1,26 @@
+/* Essai C · Catalogue : une œuvre par planche, comme un catalogue d’exposition. */
+.catalogue { padding-bottom: clamp(56px, 7vw, 100px); }
+.sommaire { display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 8px; padding-block: 8px clamp(40px, 5vw, 72px); }
+.sommaire a { display: block; aspect-ratio: 1; overflow: hidden; background: var(--ivory); opacity: .78; transition: opacity .25s; }
+.sommaire a:hover, .sommaire a:focus-visible { opacity: 1; }
+.sommaire img { width: 100%; height: 100%; object-fit: cover; }
+
+.planche { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: clamp(20px, 3vw, 48px); align-items: center; min-height: min(86vh, 860px); padding-block: clamp(40px, 6vw, 96px); border-top: 1px solid #182b3926; scroll-margin-top: 16px; }
+.planche-image { grid-column: 1 / span 8; display: grid; place-items: center; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.planche-image img { max-height: 76vh; width: auto; max-width: 100%; box-shadow: 0 30px 50px -34px #182b39b3; }
+.planche-texte { grid-column: 10 / span 3; display: grid; gap: 10px; justify-items: start; }
+.planche:nth-child(even) .planche-image { grid-column: 5 / span 8; grid-row: 1; }
+.planche:nth-child(even) .planche-texte { grid-column: 1 / span 3; grid-row: 1; }
+.planche-numero { font-size: clamp(56px, 6vw, 96px); line-height: .8; letter-spacing: -.04em; color: var(--ochre); font-variant-numeric: lining-nums; }
+.planche-numero small { font-family: var(--sans); font-size: 11px; letter-spacing: .12em; color: var(--stone); margin-left: 6px; }
+.planche-texte h2 { margin-top: 10px; font-size: clamp(30px, 2.8vw, 44px); font-weight: 400; line-height: 1.02; letter-spacing: -.025em; text-transform: none; text-wrap: balance; }
+.planche-format { font-style: italic; font-size: 20px; color: var(--stone); }
+.planche-texte .text-link { margin-top: 14px; }
+
+@media (max-width: 800px) {
+  .planche, .planche:nth-child(even) { grid-template-columns: 1fr; row-gap: 22px; min-height: 0; }
+  .planche .planche-image, .planche:nth-child(even) .planche-image { grid-column: 1; grid-row: 1; }
+  .planche .planche-texte, .planche:nth-child(even) .planche-texte { grid-column: 1; grid-row: 2; }
+  .planche-image img { max-height: 70vh; }
+  .planche-numero { font-size: 48px; }
+}

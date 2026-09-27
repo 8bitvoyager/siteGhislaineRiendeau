@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="/css/interieur.css">
   <link rel="stylesheet" href="/css/contact.css">
   <script src="/js/main.js" defer></script>
+  <script src="/js/contact.js" defer></script>
 </head>
 <body class="page-interieure page-contact">
   <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -30,7 +31,7 @@
         <a href="/">Accueil</a>
         <a href="/demarche-artistique/">Démarche artistique</a>
         <a href="/a-propos/">À propos</a>
-        <a href="https://ghislaineriendeau.com/galerie/">Galerie</a>
+        <a href="/galerie/">Galerie</a>
         <a href="/evenements/">Événements</a>
         <a href="/medias/">Médias</a>
         <a href="/contact/" aria-current="page">Contact</a>
@@ -49,6 +50,53 @@
       <figure class="page-figure contact-portrait">
         <img src="/assets/images/artiste/ghislaine-riendeau-devant-une-toile.webp" alt="Ghislaine Riendeau devant l’une de ses toiles." width="1400" height="972" fetchpriority="high">
       </figure>
+    </section>
+
+    <section class="contact-form-section container" id="formulaire" aria-labelledby="form-title">
+      <div class="contact-form-heading">
+        <h2 id="form-title" class="section-label">Écrivez-moi</h2>
+        <p class="contact-form-lede">Je lis chaque message et je vous réponds personnellement, généralement en quelques jours.</p>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="oeuvre-choisie" id="oeuvre-choisie" hidden>
+          <img src="" alt="" width="96" height="96">
+          <div>
+            <p class="contact-label">Vous vous informez sur</p>
+            <p class="oeuvre-choisie-titre"></p>
+            <p class="oeuvre-choisie-format"></p>
+          </div>
+          <button type="button" class="oeuvre-choisie-retirer" aria-label="Retirer l’œuvre du message">✕</button>
+        </div>
+        <div class="form-row">
+          <label for="champ-nom">Nom</label>
+          <input id="champ-nom" name="nom" type="text" autocomplete="name" required>
+        </div>
+        <div class="form-row">
+          <label for="champ-courriel">Courriel</label>
+          <input id="champ-courriel" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-row">
+          <label for="champ-telephone">Téléphone <span>(facultatif)</span></label>
+          <input id="champ-telephone" name="telephone" type="tel" autocomplete="tel">
+        </div>
+        <div class="form-row form-row-full">
+          <label for="champ-sujet">Objet</label>
+          <input id="champ-sujet" name="sujet" type="text" required>
+        </div>
+        <div class="form-row form-row-full">
+          <label for="champ-message">Message</label>
+          <textarea id="champ-message" name="message" rows="7" required></textarea>
+        </div>
+        <input type="hidden" name="oeuvre" id="champ-oeuvre">
+        <div class="form-piege" aria-hidden="true">
+          <label for="champ-site">Ne pas remplir</label>
+          <input id="champ-site" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="form-actions form-row-full">
+          <button class="button" type="submit">Envoyer le message <span aria-hidden="true">⟶</span></button>
+          <p class="form-statut" id="form-statut" role="status" aria-live="polite"></p>
+        </div>
+      </form>
     </section>
 
     <section class="contact-details container" aria-label="Coordonnées">
@@ -94,7 +142,7 @@
         <a href="/">Accueil</a>
         <a href="/demarche-artistique/">Démarche artistique</a>
         <a href="/a-propos/">À propos</a>
-        <a href="https://ghislaineriendeau.com/galerie/">Galerie</a>
+        <a href="/galerie/">Galerie</a>
         <a href="/evenements/">Événements</a>
         <a href="/medias/">Médias</a>
         <a href="/contact/" aria-current="page">Contact</a>

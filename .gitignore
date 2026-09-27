@@ -9,3 +9,6 @@ reference/*-[0-9]*.png
 !reference/apercu-*.png
 reference/verification*.json
 !reference/1a-22sept.png
+
+# Originaux de la galerie : retéléchargés par scripts/galerie-images.mjs
+assets/images/originals/galerie/
