@@ -1,11 +1,15 @@
-import { mkdir, copyFile, readdir, readFile } from 'node:fs/promises';
+import { mkdir, copyFile, readdir, readFile, rm } from 'node:fs/promises';
 import path from 'node:path';
 
 // Liste explicite : ni références, ni originaux, ni outils dans les assets publiés.
 const root = path.resolve(import.meta.dirname, '..');
 const output = path.join(root, 'dist');
+// Repartir d’un dossier vide : aucune ancienne image ne doit être déployée.
 await mkdir(output, { recursive: true });
-for (const file of ['index.html', '_headers', 'robots.txt']) {
+for (const entry of await readdir(output)) await rm(path.join(output, entry), { recursive: true, force: true });
+const pages = ['index.html', 'contact/index.html', 'demarche-artistique/index.html', 'a-propos/index.html', 'evenements/index.html', 'medias/index.html'];
+for (const file of [...pages, '_headers', 'robots.txt']) {
+  await mkdir(path.dirname(path.join(output, file)), { recursive: true });
   await copyFile(path.join(root, file), path.join(output, file));
 }
 for (const folder of ['css', 'js']) {

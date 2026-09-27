@@ -1,0 +1,48 @@
+/* Page Événements. Base commune dans interieur.css. */
+.page-heading { padding-block: clamp(36px, 5vw, 80px) clamp(24px, 3vw, 44px); }
+.page-heading .page-lede { max-width: 52ch; }
+
+.agenda { padding-bottom: clamp(48px, 6vw, 90px); }
+.event-list { list-style: none; margin: 14px 0 0; padding: 0; border-top: 1px solid #182b3926; }
+.event { display: grid; grid-template-columns: minmax(0, 170px) minmax(0, 1fr); gap: clamp(20px, 4vw, 64px); align-items: start; padding-block: clamp(24px, 3vw, 36px); border-bottom: 1px solid #182b3926; }
+.event-with-art { grid-template-columns: minmax(0, 170px) minmax(0, 1fr) minmax(0, 150px); }
+.event-when time { display: grid; }
+.event-day { font-size: clamp(56px, 5.5vw, 84px); line-height: .85; letter-spacing: -.04em; color: var(--blue); font-variant-numeric: lining-nums; }
+.event-month { margin-top: 10px; font-family: var(--sans); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--stone); }
+.event-body { display: grid; gap: 6px; max-width: 58ch; }
+.event-type { font-family: var(--sans); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--ochre); }
+.event-body h3 { font-size: clamp(28px, 2.6vw, 40px); font-weight: 400; line-height: 1.05; letter-spacing: -.025em; }
+.event-where { font-size: 20px; font-style: italic; color: var(--stone); }
+.event-detail { margin-top: 6px; font-size: 19px; line-height: 1.4; }
+.event-figure { margin: 0; }
+.event-figure img { width: 100%; max-height: 260px; object-fit: cover; }
+.event-figure figcaption { margin-top: 8px; font-size: 15px; font-style: italic; color: var(--stone); }
+.event-empty { padding-block: 28px; font-size: 20px; color: var(--stone); }
+
+.agenda-past .event-day { color: var(--stone); }
+.agenda-past .event { opacity: .8; }
+
+.permanent { background: var(--ivory); }
+.agenda-past { padding-top: clamp(40px, 5vw, 64px); }
+/* Le bandeau final suit le bloc ivoire : on le pose sur le papier. */
+.page-evenements .page-cta { background: transparent; border-top: 1px solid #182b3926; }
+.permanent-inner { display: grid; grid-template-columns: minmax(0, 240px) minmax(0, 1fr); gap: clamp(28px, 5vw, 80px); align-items: center; padding-block: clamp(40px, 5vw, 64px); }
+.permanent-art { width: 100%; aspect-ratio: 1; object-fit: cover; box-shadow: 0 18px 36px -22px #182b3999; }
+.permanent-copy { display: grid; justify-items: start; gap: 12px; max-width: 52ch; }
+.permanent-copy h2 { font-size: clamp(32px, 3vw, 46px); font-weight: 400; line-height: 1.05; letter-spacing: -.03em; text-transform: none; }
+.permanent-place { font-style: italic; font-size: 20px; color: var(--stone); margin-top: -6px; }
+.permanent-copy > p:last-of-type { font-size: 19px; line-height: 1.4; }
+.permanent-copy .button { margin-top: 10px; }
+
+@media (max-width: 1000px) {
+  .event-with-art { grid-template-columns: minmax(0, 170px) minmax(0, 1fr); }
+  .event-figure { grid-column: 2; max-width: 160px; }
+}
+@media (max-width: 700px) {
+  .event, .event-with-art { grid-template-columns: 1fr; gap: 14px; }
+  .event-when time { display: flex; align-items: baseline; gap: 12px; }
+  .event-day { font-size: 52px; }
+  .event-figure { grid-column: 1; }
+  .permanent-inner { grid-template-columns: 1fr; }
+  .permanent-art { max-width: 220px; }
+}

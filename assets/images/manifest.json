@@ -72,7 +72,7 @@
   {
     "local": "assets/images/artiste/ghislaine-riendeau-devant-une-toile.webp",
     "title": "Ghislaine Riendeau devant une toile",
-    "usage": "Portrait archivé",
+    "usage": "Page Contact",
     "page": "https://ghislaineriendeau.com/contact/",
     "originalUrl": "https://ghislaineriendeau.com/wp-content/uploads/2024/09/Ghislaine-11-09-24.jpg",
     "original": "assets/images/originals/Ghislaine-11-09-24.jpg",
@@ -83,7 +83,7 @@
   {
     "local": "assets/images/hero/cta-migration-chromatique.webp",
     "title": "Migration Chromatique",
-    "usage": "Détail décoratif de la démarche",
+    "usage": "Ouverture de la page Démarche artistique",
     "page": "https://ghislaineriendeau.com/nouveautes/",
     "originalUrl": "https://ghislaineriendeau.com/wp-content/uploads/2026/03/Migration-Chromatique-13X17.jpg",
     "original": "assets/images/originals/Migration-Chromatique-13X17.jpg",
@@ -163,5 +163,58 @@
     "width": 800,
     "height": 600,
     "bytes": 1040
+  },
+  {
+    "local": "assets/images/artiste/ghislaine-riendeau-dans-les-herbes-hautes.webp",
+    "title": "Ghislaine Riendeau devant Dans les Herbes hautes",
+    "usage": "Page À propos",
+    "page": "https://ghislaineriendeau.com/demarche-artistique/",
+    "originalUrl": "https://ghislaineriendeau.com/wp-content/uploads/2026/01/20260131_105723.jpg",
+    "original": "assets/images/originals/Atelier-20260131.jpg",
+    "width": 1200,
+    "height": 1225,
+    "bytes": 358344
+  },
+  {
+    "local": "assets/images/medias/journal-de-levis-2023.webp",
+    "title": "Journal de Lévis — Deuxième exposition solo pour Ghislaine Riendeau",
+    "usage": "Page Médias",
+    "page": "https://ghislaineriendeau.com/medias/",
+    "originalUrl": "https://ghislaineriendeau.com/wp-content/uploads/2024/09/Article-Journal-de-Levis-24-octobre-2023-scaled.jpg",
+    "original": "assets/images/originals/Article-Journal-de-Levis-24-octobre-2023-scaled.jpg",
+    "width": 2000,
+    "height": 1125,
+    "bytes": 301708
+  },
+  {
+    "local": "assets/images/medias/journal-de-chambly-2020.webp",
+    "title": "Le Journal de Chambly — Une artiste aux toiles vivantes",
+    "usage": "Page Médias",
+    "page": "https://ghislaineriendeau.com/medias/",
+    "originalUrl": "https://ghislaineriendeau.com/wp-content/uploads/2024/09/Une-artiste-aux-toiles-vivantes-1-scaled.jpg",
+    "original": "assets/images/originals/Une-artiste-aux-toiles-vivantes-1-scaled.jpg",
+    "width": 1400,
+    "height": 1980,
+    "bytes": 209044
+  },
+  {
+    "local": "assets/images/medias/dun-atelier-est-nee-une-exposition-2018.webp",
+    "title": "D’un atelier est née une exposition",
+    "usage": "Page Médias",
+    "page": "https://ghislaineriendeau.com/medias/",
+    "originalUrl": "https://ghislaineriendeau.com/wp-content/uploads/2024/09/atelier-est-nee-une-exposition-octobre-2018.png",
+    "original": "assets/images/originals/atelier-est-nee-une-exposition-octobre-2018.png",
+    "width": 1093,
+    "height": 877,
+    "bytes": 118814
+  },
+  {
+    "local": "assets/images/medias/dun-atelier-est-nee-une-exposition-2018.pdf",
+    "title": "D’un atelier est née une exposition (PDF de l’article)",
+    "usage": "Page Médias",
+    "page": "https://ghislaineriendeau.com/medias/",
+    "originalUrl": "https://ghislaineriendeau.com/wp-content/uploads/2024/09/Dun-atelier-est-nee-une-exposition-octobre-2018.pdf",
+    "original": "assets/images/originals/Dun-atelier-est-nee-une-exposition-octobre-2018.pdf",
+    "bytes": 1446480
   }
 ]
