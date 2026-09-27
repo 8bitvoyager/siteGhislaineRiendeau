@@ -12,3 +12,6 @@ reference/verification*.json
 
 # Originaux de la galerie : retéléchargés par scripts/galerie-images.mjs
 assets/images/originals/galerie/
+
+# Cache des images générées par le build
+.cache/

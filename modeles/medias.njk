@@ -1,0 +1,58 @@
+{% extends "base.njk" %}
+{% set titre = medias.titre + " — " + site.nom + ", artiste peintre" %}
+{% set description = "Articles de presse consacrés à " + site.nom + ", artiste peintre : Journal de Lévis, Le Journal de Chambly et autres." %}
+{% set polices = ["cormorant-garamond-400-normal", "cormorant-garamond-400-italic", "jost-400-normal"] %}
+{% set styles = ["/css/interieur.css", "/css/medias.css"] %}
+{% set classe = "page-interieure page-medias" %}
+{% set actif = "medias" %}
+{% block contenu %}
+    <section class="page-heading container" aria-labelledby="medias-title">
+      <h1 id="medias-title" class="page-eyebrow">{{ medias.titre }}</h1>
+      <p class="page-headline">{{ medias.accroche }}</p>
+      <p class="page-lede">{{ medias.introduction | enrichi }}</p>
+    </section>
+
+    <section class="press-quote" aria-label="Citation de presse">
+      <div class="press-quote-inner container">
+        <figure>
+          <blockquote>« {{ medias.citation.texte | enrichi }} »</blockquote>
+          <figcaption>{{ medias.citation.source }}</figcaption>
+        </figure>
+        <figure class="press-quote-art">
+          {{ image(medias.citation.image, medias.citation.oeuvre + " — œuvre de " + site.nom + ".", { chargement: "lazy" }) }}
+          <figcaption>{{ medias.citation.oeuvre }}</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="articles container" aria-labelledby="articles-title">
+      <h2 id="articles-title" class="section-label">Articles</h2>
+      <ol class="article-list">
+{% for article in medias.articles %}
+{% set pdf = article.document and article.document.endsWith(".pdf") %}
+{% set lien = article.document or article.image %}
+        <li class="article">
+          <a class="article-scan" href="{{ lien }}" aria-label="Lire l’article {{ article.titre }}{% if pdf %} (PDF){% else %} en grand format{% endif %}">
+            {{ image(article.image, article.alt, { chargement: "lazy" }) }}
+          </a>
+          <div class="article-body">
+            <p class="article-meta"><span>{{ article.journal }}</span><time datetime="{{ article.date }}">{{ article.date | dateLongue }}</time></p>
+            <h3>{{ article.titre }}</h3>
+            <p class="article-author">Par {{ article.auteur }}</p>
+            <p>{{ article.resume | enrichi }}</p>
+            <a class="text-link" href="{{ lien }}">Lire l’article{% if pdf %} (PDF){% endif %} <span aria-hidden="true">⟶</span></a>
+          </div>
+        </li>
+{% endfor %}
+      </ol>
+    </section>
+
+    <section class="page-cta" aria-labelledby="medias-cta-title">
+      <div class="page-cta-inner container">
+        <h2 id="medias-cta-title">{{ medias.appel }}</h2>
+        <div class="page-cta-actions">
+          <a class="button" href="/contact/">Me contacter <span aria-hidden="true">⟶</span></a>
+        </div>
+      </div>
+    </section>
+{% endblock %}

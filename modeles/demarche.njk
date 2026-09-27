@@ -1,0 +1,70 @@
+{% extends "base.njk" %}
+{% set titre = demarche.titre + " — " + site.nom + ", artiste peintre" %}
+{% set description = "La démarche artistique de " + site.nom + " : nature, spiritualité et empreintes laissées depuis l’âge de pierre." %}
+{% set polices = ["cormorant-garamond-400-normal", "cormorant-garamond-400-italic", "jost-400-normal"] %}
+{% set styles = ["/css/interieur.css", "/css/demarche.css"] %}
+{% set classe = "page-interieure page-demarche" %}
+{% set actif = "demarche" %}
+{% block contenu %}
+    <section class="page-intro container" aria-labelledby="demarche-title">
+      <div>
+        <h1 id="demarche-title" class="page-eyebrow">{{ demarche.titre }}</h1>
+        <figure class="epigraph">
+          <blockquote>« {{ demarche.citation.texte | enrichi }} »</blockquote>
+          <figcaption>{{ demarche.citation.auteur }}</figcaption>
+        </figure>
+      </div>
+      <figure class="page-figure demarche-opening">
+        {{ image(demarche.ouverture.image, demarche.ouverture.alt, { priorite: true }) }}
+        <figcaption>{{ demarche.ouverture.oeuvre }} <span>{{ demarche.ouverture.format | pouces }}</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="demarche-body container" aria-label="Texte de la démarche">
+      <aside class="demarche-aside" aria-label="Matières et gestes">
+        <div>
+          <h2 class="section-label">Palette</h2>
+          <ul class="palette">
+{% for teinte in demarche.palette %}
+            <li><i style="background:{{ teinte.couleur }}"></i>{{ teinte.nom }}</li>
+{% endfor %}
+          </ul>
+        </div>
+        <div>
+          <h2 class="section-label">Gestes</h2>
+          <ul class="gestures">
+{% for geste in demarche.gestes %}
+            <li>{{ geste }}</li>
+{% endfor %}
+          </ul>
+        </div>
+      </aside>
+      <div class="demarche-prose">
+        <p class="demarche-lead">{{ demarche.chapeau | enrichi }}</p>
+{% for paragraphe in demarche.paragraphes %}
+        <p>{{ paragraphe | enrichi }}</p>
+{% endfor %}
+      </div>
+    </section>
+
+    <figure class="demarche-band">
+      {{ image(demarche.bandeau.image, demarche.bandeau.alt, { chargement: "lazy" }) }}
+      <figcaption class="container artwork-caption">{{ demarche.bandeau.oeuvre }} <span>{{ demarche.bandeau.format | pouces }}</span></figcaption>
+    </figure>
+
+    <section class="demarche-closing container" aria-label="Conclusion de la démarche">
+      <p class="demarche-prose-single">{{ demarche.conclusion | enrichi }}</p>
+      <blockquote class="demarche-final">{{ demarche.pensee | enrichi }}</blockquote>
+      <p class="demarche-signature" aria-hidden="true">{{ site.nom }}</p>
+    </section>
+
+    <section class="page-cta" aria-labelledby="demarche-cta-title">
+      <div class="page-cta-inner container">
+        <h2 id="demarche-cta-title">{{ demarche.appel }}</h2>
+        <div class="page-cta-actions">
+          <a class="button" href="/galerie/">Découvrir les œuvres <span aria-hidden="true">⟶</span></a>
+          <a class="button" href="/contact/">Me contacter <span aria-hidden="true">⟶</span></a>
+        </div>
+      </div>
+    </section>
+{% endblock %}

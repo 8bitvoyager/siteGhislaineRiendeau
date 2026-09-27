@@ -1,0 +1,101 @@
+{% extends "base.njk" %}
+{% set titre = contact.titre + " — " + site.nom + ", artiste peintre" %}
+{% set description = "Joindre " + site.nom + ", artiste peintre : téléphone, courriel et galerie où voir ses œuvres." %}
+{% set polices = ["cormorant-garamond-400-normal", "jost-400-normal", "la-belle-aurore-400-normal"] %}
+{% set styles = ["/css/interieur.css", "/css/contact.css"] %}
+{% set scripts = ["/js/contact.js"] %}
+{% set classe = "page-interieure page-contact" %}
+{% set actif = "contact" %}
+{% block contenu %}
+    <section class="page-intro container" aria-labelledby="contact-title">
+      <div>
+        <h1 id="contact-title" class="page-eyebrow">{{ contact.titre }}</h1>
+        <p class="page-headline">{{ contact.accroche }}</p>
+        <p class="page-lede">{{ contact.introduction | enrichi }}</p>
+        <p class="page-note" aria-hidden="true">{{ contact.note }}</p>
+      </div>
+      <figure class="page-figure contact-portrait">
+        {{ image(contact.portrait.image, contact.portrait.alt, { priorite: true }) }}
+      </figure>
+    </section>
+
+    <section class="contact-form-section container" id="formulaire" aria-labelledby="form-title">
+      <div class="contact-form-heading">
+        <h2 id="form-title" class="section-label">{{ contact.formulaire.titre }}</h2>
+        <p class="contact-form-lede">{{ contact.formulaire.introduction | enrichi }}</p>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="oeuvre-choisie" id="oeuvre-choisie" hidden>
+          <img src="" alt="" width="96" height="96">
+          <div>
+            <p class="contact-label">Vous vous informez sur</p>
+            <p class="oeuvre-choisie-titre"></p>
+            <p class="oeuvre-choisie-format"></p>
+          </div>
+          <button type="button" class="oeuvre-choisie-retirer" aria-label="Retirer l’œuvre du message">✕</button>
+        </div>
+        <div class="form-row">
+          <label for="champ-nom">Nom</label>
+          <input id="champ-nom" name="nom" type="text" autocomplete="name" required>
+        </div>
+        <div class="form-row">
+          <label for="champ-courriel">Courriel</label>
+          <input id="champ-courriel" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-row">
+          <label for="champ-telephone">Téléphone <span>(facultatif)</span></label>
+          <input id="champ-telephone" name="telephone" type="tel" autocomplete="tel">
+        </div>
+        <div class="form-row form-row-full">
+          <label for="champ-sujet">Objet</label>
+          <input id="champ-sujet" name="sujet" type="text" required>
+        </div>
+        <div class="form-row form-row-full">
+          <label for="champ-message">Message</label>
+          <textarea id="champ-message" name="message" rows="7" required></textarea>
+        </div>
+        <input type="hidden" name="oeuvre" id="champ-oeuvre">
+        <div class="form-piege" aria-hidden="true">
+          <label for="champ-site">Ne pas remplir</label>
+          <input id="champ-site" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="form-actions form-row-full">
+          <button class="button" type="submit">Envoyer le message <span aria-hidden="true">⟶</span></button>
+          <p class="form-statut" id="form-statut" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+
+    <section class="contact-details container" aria-label="Coordonnées">
+      <ul class="contact-list">
+        <li class="contact-item">
+          <p class="contact-label">Téléphone</p>
+          <a class="contact-value" href="tel:+1{{ site.telephone | chiffres }}">{{ site.telephone }}</a>
+          <p class="contact-note">{{ contact.notes.telephone }}</p>
+        </li>
+        <li class="contact-item">
+          <p class="contact-label">Courriel</p>
+          <a class="contact-value" href="mailto:{{ site.courriel }}">{{ site.courriel }}</a>
+          <p class="contact-note">{{ contact.notes.courriel }}</p>
+        </li>
+        <li class="contact-item">
+          <p class="contact-label">Facebook</p>
+          <a class="contact-value" href="{{ site.facebook }}">Suivre l’atelier <span aria-hidden="true">⟶</span></a>
+          <p class="contact-note">{{ contact.notes.facebook }}</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact-gallery" aria-labelledby="gallery-title">
+      <div class="contact-gallery-inner container">
+        {{ image(contact.galerie.image, contact.galerie.oeuvre + " — œuvre de " + site.nom + ".", { classe: "contact-gallery-art", chargement: "lazy" }) }}
+        <div class="contact-gallery-copy">
+          <p class="contact-label">{{ contact.galerie.etiquette }}</p>
+          <h2 id="gallery-title">{{ contact.galerie.titre }}</h2>
+          <p class="contact-gallery-place">{{ contact.galerie.lieu }}</p>
+          <p>{{ contact.galerie.description | enrichi }}</p>
+          <a class="button" href="{{ contact.galerie.lien }}">{{ contact.galerie.bouton }} <span aria-hidden="true">⟶</span></a>
+        </div>
+      </div>
+    </section>
+{% endblock %}

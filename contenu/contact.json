@@ -1,0 +1,29 @@
+{
+  "titre": "Contact",
+  "accroche": "Une œuvre vous interpelle ?",
+  "introduction": "Pour une question sur une toile, une acquisition ou une exposition, écrivez-moi ou appelez-moi. Je vous répondrai personnellement.",
+  "note": "Au plaisir d’échanger avec vous",
+  "portrait": {
+    "image": "/assets/images/artiste/ghislaine-riendeau-devant-une-toile.webp",
+    "alt": "Ghislaine Riendeau devant l’une de ses toiles."
+  },
+  "formulaire": {
+    "titre": "Écrivez-moi",
+    "introduction": "Je lis chaque message et je vous réponds personnellement, généralement en quelques jours."
+  },
+  "notes": {
+    "telephone": "Laissez un message, je vous rappelle.",
+    "courriel": "Idéal pour joindre une photo de l’œuvre qui vous intéresse.",
+    "facebook": "Nouvelles toiles et expositions à venir."
+  },
+  "galerie": {
+    "etiquette": "En galerie",
+    "titre": "Galerie Le Vivoir",
+    "lieu": "Saint-Jean-Port-Joli",
+    "description": "Certaines œuvres et leurs prix sont présentés en permanence sur le site de la galerie.",
+    "lien": "https://levivoir.com/ghislaine-riendeau",
+    "bouton": "Voir les œuvres au Vivoir",
+    "image": "/assets/images/evenements/le-bonheur-est-dans-le-pre.webp",
+    "oeuvre": "Le bonheur est dans le Pré"
+  }
+}

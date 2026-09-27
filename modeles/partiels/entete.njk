@@ -1,0 +1,13 @@
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="identity" href="/" aria-label="{{ site.nom }} — Accueil">
+        <span class="identity-name">{{ site.nom }}</span>
+        <span class="identity-profession">{{ site.profession }}</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" hidden>Menu <span aria-hidden="true">☰</span></button>
+      <nav class="navigation" id="navigation" aria-label="Navigation principale">
+{% include "partiels/navigation.njk" %}
+      </nav>
+      {{ image(site.slogan.image, site.slogan.alt, { classe: "header-note" }) }}
+    </div>
+  </header>

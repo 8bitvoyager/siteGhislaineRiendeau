@@ -1,0 +1,434 @@
+# Configuration de Sveltia CMS (https://github.com/sveltia/sveltia-cms).
+# Chaque enregistrement crée un commit sur la branche ci-dessous ; Cloudflare redéploie ensuite le site.
+backend:
+  name: github
+  repo: 8bitvoyager/siteGhislaineRiendeau
+  branch: cms-sveltia
+  # Adresse du Worker d’authentification GitHub (sveltia-cms-auth) une fois déployé :
+  # base_url: https://sveltia-cms-auth.VOTRE-COMPTE.workers.dev
+
+site_url: https://v2.ghislaineriendeau.com
+display_url: https://v2.ghislaineriendeau.com
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+# Les photos sont converties en WebP et réduites avant l’envoi (les photos de téléphone font souvent 5 Mo).
+media_libraries:
+  default:
+    config:
+      max_file_size: 30000000
+      transformations:
+        raster_image:
+          format: webp
+          quality: 88
+          width: 2400
+          height: 2400
+
+collections:
+  - name: galerie
+    label: "Galerie"
+    description: "Les quatre séries de la galerie. Ajoutez, retirez ou réordonnez les œuvres de chaque série."
+    icon: photo_library
+    files:
+      - name: nouveautes
+        label: "Nouveautés"
+        file: contenu/galerie/nouveautes.json
+        fields:
+          - { name: titre, label: "Nom de la série", widget: string }
+          - { name: sousTitre, label: "Sous-titre", widget: string }
+          - { name: ordre, label: "Position dans les onglets", widget: number, value_type: int, min: 1, hint: "1 = premier onglet" }
+          - name: oeuvres
+            label: "Œuvres"
+            label_singular: "œuvre"
+            widget: list
+            summary: "{{fields.titre}} — {{fields.format}} po"
+            hint: "Glissez les œuvres pour changer leur ordre d’affichage."
+            fields:
+              - { name: titre, label: "Titre", widget: string }
+              - name: format
+                label: "Format (en pouces)"
+                widget: string
+                hint: "Hauteur × largeur, par exemple 20 × 16 ou 20 x 16"
+                pattern: ['^\s*\d+([.,]\d+)?\s*[xX×]\s*\d+([.,]\d+)?\s*$', "Écrivez deux nombres séparés par × ou x, par exemple 20 × 16"]
+              - name: image
+                label: "Photo de l’œuvre"
+                widget: image
+                media_folder: /assets/uploads/galerie
+                public_folder: /assets/uploads/galerie
+                hint: "Photo bien droite, sans cadre si possible. Elle sera réduite et optimisée automatiquement."
+      - name: magnificence-des-oies
+        label: "Magnificence des Oies"
+        file: contenu/galerie/magnificence-des-oies.json
+        fields:
+          - { name: titre, label: "Nom de la série", widget: string }
+          - { name: sousTitre, label: "Sous-titre", widget: string }
+          - { name: ordre, label: "Position dans les onglets", widget: number, value_type: int, min: 1, hint: "1 = premier onglet" }
+          - name: oeuvres
+            label: "Œuvres"
+            label_singular: "œuvre"
+            widget: list
+            summary: "{{fields.titre}} — {{fields.format}} po"
+            hint: "Glissez les œuvres pour changer leur ordre d’affichage."
+            fields:
+              - { name: titre, label: "Titre", widget: string }
+              - name: format
+                label: "Format (en pouces)"
+                widget: string
+                hint: "Hauteur × largeur, par exemple 20 × 16 ou 20 x 16"
+                pattern: ['^\s*\d+([.,]\d+)?\s*[xX×]\s*\d+([.,]\d+)?\s*$', "Écrivez deux nombres séparés par × ou x, par exemple 20 × 16"]
+              - name: image
+                label: "Photo de l’œuvre"
+                widget: image
+                media_folder: /assets/uploads/galerie
+                public_folder: /assets/uploads/galerie
+                hint: "Photo bien droite, sans cadre si possible. Elle sera réduite et optimisée automatiquement."
+      - name: traces-de-lhumanite
+        label: "Traces de l’Humanité"
+        file: contenu/galerie/traces-de-lhumanite.json
+        fields:
+          - { name: titre, label: "Nom de la série", widget: string }
+          - { name: sousTitre, label: "Sous-titre", widget: string }
+          - { name: ordre, label: "Position dans les onglets", widget: number, value_type: int, min: 1, hint: "1 = premier onglet" }
+          - name: oeuvres
+            label: "Œuvres"
+            label_singular: "œuvre"
+            widget: list
+            summary: "{{fields.titre}} — {{fields.format}} po"
+            hint: "Glissez les œuvres pour changer leur ordre d’affichage."
+            fields:
+              - { name: titre, label: "Titre", widget: string }
+              - name: format
+                label: "Format (en pouces)"
+                widget: string
+                hint: "Hauteur × largeur, par exemple 20 × 16 ou 20 x 16"
+                pattern: ['^\s*\d+([.,]\d+)?\s*[xX×]\s*\d+([.,]\d+)?\s*$', "Écrivez deux nombres séparés par × ou x, par exemple 20 × 16"]
+              - name: image
+                label: "Photo de l’œuvre"
+                widget: image
+                media_folder: /assets/uploads/galerie
+                public_folder: /assets/uploads/galerie
+                hint: "Photo bien droite, sans cadre si possible. Elle sera réduite et optimisée automatiquement."
+      - name: petits-formats
+        label: "Petits formats"
+        file: contenu/galerie/petits-formats.json
+        fields:
+          - { name: titre, label: "Nom de la série", widget: string }
+          - { name: sousTitre, label: "Sous-titre", widget: string }
+          - { name: ordre, label: "Position dans les onglets", widget: number, value_type: int, min: 1, hint: "1 = premier onglet" }
+          - name: oeuvres
+            label: "Œuvres"
+            label_singular: "œuvre"
+            widget: list
+            summary: "{{fields.titre}} — {{fields.format}} po"
+            hint: "Glissez les œuvres pour changer leur ordre d’affichage."
+            fields:
+              - { name: titre, label: "Titre", widget: string }
+              - name: format
+                label: "Format (en pouces)"
+                widget: string
+                hint: "Hauteur × largeur, par exemple 20 × 16 ou 20 x 16"
+                pattern: ['^\s*\d+([.,]\d+)?\s*[xX×]\s*\d+([.,]\d+)?\s*$', "Écrivez deux nombres séparés par × ou x, par exemple 20 × 16"]
+              - name: image
+                label: "Photo de l’œuvre"
+                widget: image
+                media_folder: /assets/uploads/galerie
+                public_folder: /assets/uploads/galerie
+                hint: "Photo bien droite, sans cadre si possible. Elle sera réduite et optimisée automatiquement."
+
+  - name: evenements
+    label: "Événements"
+    description: "Expositions, vernissages, ateliers. Les événements terminés passent automatiquement dans « Récemment »."
+    icon: event
+    files:
+      - name: evenements
+        label: "Page Événements"
+        file: contenu/evenements.json
+        fields:
+          - { name: titre, label: "Titre de la page", widget: string }
+          - { name: accroche, label: "Grand titre", widget: string }
+          - { name: introduction, label: "Introduction", widget: text }
+          - name: evenements
+            label: "Événements"
+            label_singular: "événement"
+            widget: list
+            summary: "{{fields.debut}} — {{fields.titre}}"
+            fields:
+              - { name: type, label: "Type", widget: string, hint: "Exposition, Atelier, Vernissage, Vente aux enchères, Symposium…" }
+              - { name: titre, label: "Lieu ou nom de l’événement", widget: string, hint: "Par exemple : Galerie Miss Rey" }
+              - { name: lieu, label: "Ville ou précision", widget: string }
+              - { name: debut, label: "Date de début", widget: datetime, time_format: false, format: "YYYY-MM-DD" }
+              - { name: heure, label: "Heure (facultatif)", widget: string, required: false, pattern: ['^([01]\d|2[0-3]):[0-5]\d$', "Format 24 h, par exemple 14:00"] }
+              - { name: fin, label: "Date de fin", widget: datetime, time_format: false, format: "YYYY-MM-DD", required: false, hint: "Laisser vide si l’événement dure une seule journée." }
+              - { name: detail, label: "Détails", widget: text, hint: "Italique : *comme ceci*. Un retour à la ligne crée un saut de ligne." }
+              - { name: image, label: "Œuvre présentée (photo, facultatif)", widget: image, required: false }
+              - { name: oeuvre, label: "Titre de l’œuvre présentée", widget: string, required: false }
+              - { name: vedette, label: "Mettre en vedette sur l’accueil", widget: boolean, default: false, hint: "Nécessite une photo d’œuvre." }
+          - name: permanence
+            label: "Galerie permanente"
+            widget: object
+            fields:
+              - { name: titre, label: "Galerie", widget: string }
+              - { name: lieu, label: "Ville", widget: string }
+              - { name: depuis, label: "Depuis", widget: string, hint: "Par exemple : depuis mars 2024" }
+              - { name: description, label: "Description", widget: text }
+              - { name: lien, label: "Lien vers la galerie", widget: string }
+              - { name: bouton, label: "Texte du bouton", widget: string }
+              - { name: image, label: "Œuvre (photo)", widget: image }
+              - { name: oeuvre, label: "Titre de l’œuvre", widget: string }
+          - { name: appel, label: "Phrase de fin de page", widget: string }
+
+  - name: pages
+    label: "Pages"
+    description: "Les textes et les images des pages du site."
+    icon: article
+    files:
+      - name: accueil
+        label: "Accueil"
+        file: contenu/accueil.json
+        fields:
+          - { name: description, label: "Description (moteurs de recherche)", widget: text }
+          - name: hero
+            label: "Haut de page"
+            widget: object
+            hint: "Le grand titre « Là où la nature raconte l’humain » fait partie du design et ne se modifie pas ici."
+            fields:
+              - { name: image, label: "Image principale", widget: image, hint: "Composition panoramique : l’artiste à gauche, la peinture à droite." }
+              - { name: alt, label: "Description de l’image", widget: string }
+              - { name: transcription, label: "Texte présent dans l’image", widget: text, hint: "Pour les lecteurs d’écran." }
+              - { name: sousTitre, label: "Sous-titre", widget: text, hint: "Italique : *comme ceci*. Un retour à la ligne crée un saut de ligne." }
+              - { name: bouton, label: "Texte du bouton", widget: string }
+          - name: series
+            label: "Section Les séries"
+            widget: object
+            fields:
+              - { name: titre, label: "Petit titre", widget: string }
+              - { name: accroche, label: "Grand titre", widget: text, hint: "Italique : *comme ceci*. Un retour à la ligne crée un saut de ligne." }
+              - { name: description, label: "Description", widget: text }
+              - { name: lien, label: "Texte du lien", widget: string }
+              - name: cartes
+                label: "Cartes des séries"
+                widget: list
+                allow_add: false
+                allow_remove: false
+                summary: "{{fields.titre}}"
+                fields:
+                  - { name: serie, label: "Série", widget: select, options: [ { label: "Nouveautés", value: nouveautes }, { label: "Magnificence des Oies", value: magnificence-des-oies }, { label: "Traces de l’Humanité", value: traces-de-lhumanite }, { label: "Petits formats", value: petits-formats } ] }
+                  - { name: titre, label: "Titre", widget: string }
+                  - { name: legende, label: "Légende", widget: string }
+                  - { name: oeuvre, label: "Titre de l’œuvre montrée", widget: string }
+                  - { name: image, label: "Image", widget: image }
+          - name: demarche
+            label: "Section Démarche"
+            widget: object
+            fields:
+              - { name: titre, label: "Titre", widget: string }
+              - { name: citation, label: "Citation", widget: text, hint: "Italique : *comme ceci*. Un retour à la ligne crée un saut de ligne." }
+              - { name: image, label: "Peinture en fond", widget: image }
+              - { name: alt, label: "Description de la peinture", widget: string }
+              - { name: paragraphes, label: "Paragraphes", widget: list, field: { name: texte, label: "Paragraphe", widget: text } }
+              - { name: bouton, label: "Texte du bouton", widget: string }
+              - name: note
+                label: "Image de droite"
+                widget: object
+                fields:
+                  - { name: image, label: "Image", widget: image }
+                  - { name: alt, label: "Description", widget: string }
+          - name: evenements
+            label: "Section Événements"
+            widget: object
+            hint: "Les événements eux-mêmes se modifient dans Événements (cochez « Mettre en vedette sur l’accueil »)."
+            fields:
+              - { name: titre, label: "Titre", widget: string }
+              - { name: introduction, label: "Introduction", widget: text }
+              - { name: lien, label: "Texte du lien", widget: string }
+          - name: invitation
+            label: "Bandeau final"
+            widget: object
+            fields:
+              - { name: titre, label: "Titre", widget: string }
+              - { name: texte, label: "Texte", widget: string }
+              - { name: bouton, label: "Texte du bouton", widget: string }
+              - { name: image, label: "Image de fond", widget: image }
+
+      - name: demarche
+        label: "Démarche artistique"
+        file: contenu/demarche.json
+        fields:
+          - { name: titre, label: "Titre de la page", widget: string }
+          - name: citation
+            label: "Citation d’ouverture"
+            widget: object
+            fields:
+              - { name: texte, label: "Citation", widget: text }
+              - { name: auteur, label: "Auteur", widget: string }
+          - name: ouverture
+            label: "Œuvre d’ouverture"
+            widget: object
+            fields:
+              - { name: image, label: "Image", widget: image }
+              - { name: alt, label: "Description", widget: string }
+              - { name: oeuvre, label: "Titre de l’œuvre", widget: string }
+              - { name: format, label: "Format (en pouces)", widget: string }
+          - name: palette
+            label: "Palette"
+            widget: list
+            summary: "{{fields.nom}}"
+            fields:
+              - { name: nom, label: "Couleur", widget: string }
+              - { name: couleur, label: "Teinte (code)", widget: string, hint: "Code couleur, par exemple #b48a55", pattern: ['^#[0-9a-fA-F]{6}$', "Code de 6 caractères précédé de #"] }
+          - { name: gestes, label: "Gestes", widget: list, field: { name: geste, label: "Geste", widget: string } }
+          - { name: chapeau, label: "Premier paragraphe (mis en valeur)", widget: text, hint: "Italique : *comme ceci*. Un retour à la ligne crée un saut de ligne." }
+          - { name: paragraphes, label: "Paragraphes suivants", widget: list, field: { name: texte, label: "Paragraphe", widget: text } }
+          - name: bandeau
+            label: "Grande image"
+            widget: object
+            fields:
+              - { name: image, label: "Image", widget: image }
+              - { name: alt, label: "Description", widget: string }
+              - { name: oeuvre, label: "Titre de l’œuvre", widget: string }
+              - { name: format, label: "Format (en pouces)", widget: string }
+          - { name: conclusion, label: "Paragraphe de conclusion", widget: text, hint: "Italique : *comme ceci*. Un retour à la ligne crée un saut de ligne." }
+          - { name: pensee, label: "Pensée finale (en grand)", widget: text }
+          - { name: appel, label: "Phrase de fin de page", widget: string }
+
+      - name: a-propos
+        label: "À propos"
+        file: contenu/a-propos.json
+        fields:
+          - { name: titre, label: "Titre de la page", widget: string }
+          - { name: accroche, label: "Grand titre", widget: string }
+          - { name: introduction, label: "Introduction", widget: text }
+          - name: faitsSaillants
+            label: "Faits saillants"
+            widget: list
+            summary: "{{fields.etiquette}}"
+            fields:
+              - { name: etiquette, label: "Étiquette", widget: string }
+              - { name: valeur, label: "Texte", widget: string }
+          - name: portrait
+            label: "Portrait"
+            widget: object
+            fields:
+              - { name: image, label: "Photo", widget: image }
+              - { name: alt, label: "Description", widget: string }
+          - name: parcours
+            label: "Parcours"
+            label_singular: "section"
+            widget: list
+            summary: "{{fields.titre}}"
+            fields:
+              - { name: titre, label: "Titre de la section", widget: string }
+              - { name: ancre, label: "Identifiant (lien)", widget: string, hint: "Un mot sans espace ni accent, par exemple symposiums", pattern: ['^[a-z0-9-]+$', "Lettres minuscules, chiffres et tirets seulement"] }
+              - name: groupes
+                label: "Listes"
+                widget: list
+                summary: "{{fields.sousTitre}}"
+                fields:
+                  - { name: sousTitre, label: "Sous-titre (facultatif)", widget: string, required: false }
+                  - name: entrees
+                    label: "Entrées"
+                    label_singular: "entrée"
+                    widget: list
+                    summary: "{{fields.texte}} — {{fields.date}}"
+                    fields:
+                      - { name: texte, label: "Texte", widget: string, hint: "Italique : *comme ceci*. Un retour à la ligne crée un saut de ligne." }
+                      - { name: date, label: "Date (facultatif)", widget: string, required: false }
+          - name: cours
+            label: "Cours privés"
+            widget: object
+            fields:
+              - { name: titre, label: "Titre", widget: string }
+              - { name: prix, label: "Prix", widget: string }
+              - { name: duree, label: "Durée", widget: string }
+              - { name: description, label: "Description", widget: text }
+              - { name: bouton, label: "Texte du bouton", widget: string }
+
+      - name: contact
+        label: "Contact"
+        file: contenu/contact.json
+        fields:
+          - { name: titre, label: "Titre de la page", widget: string }
+          - { name: accroche, label: "Grand titre", widget: string }
+          - { name: introduction, label: "Introduction", widget: text }
+          - { name: note, label: "Note manuscrite", widget: string }
+          - name: portrait
+            label: "Portrait"
+            widget: object
+            fields:
+              - { name: image, label: "Photo", widget: image }
+              - { name: alt, label: "Description", widget: string }
+          - name: formulaire
+            label: "Formulaire"
+            widget: object
+            fields:
+              - { name: titre, label: "Titre", widget: string }
+              - { name: introduction, label: "Texte", widget: text }
+          - name: notes
+            label: "Notes sous les coordonnées"
+            widget: object
+            hint: "Les coordonnées elles-mêmes se modifient dans Réglages du site."
+            fields:
+              - { name: telephone, label: "Sous le téléphone", widget: string }
+              - { name: courriel, label: "Sous le courriel", widget: string }
+              - { name: facebook, label: "Sous Facebook", widget: string }
+          - name: galerie
+            label: "Galerie partenaire"
+            widget: object
+            fields:
+              - { name: etiquette, label: "Étiquette", widget: string }
+              - { name: titre, label: "Galerie", widget: string }
+              - { name: lieu, label: "Ville", widget: string }
+              - { name: description, label: "Description", widget: text }
+              - { name: lien, label: "Lien", widget: string }
+              - { name: bouton, label: "Texte du bouton", widget: string }
+              - { name: image, label: "Œuvre (photo)", widget: image }
+              - { name: oeuvre, label: "Titre de l’œuvre", widget: string }
+
+      - name: medias
+        label: "Médias"
+        file: contenu/medias.json
+        fields:
+          - { name: titre, label: "Titre de la page", widget: string }
+          - { name: accroche, label: "Grand titre", widget: string }
+          - { name: introduction, label: "Introduction", widget: text }
+          - name: citation
+            label: "Citation de presse"
+            widget: object
+            hint: "Aussi affichée sur l’accueil."
+            fields:
+              - { name: texte, label: "Citation (sans guillemets)", widget: text }
+              - { name: source, label: "Source", widget: string }
+              - { name: image, label: "Œuvre (photo)", widget: image }
+              - { name: oeuvre, label: "Titre de l’œuvre", widget: string }
+          - name: articles
+            label: "Articles"
+            label_singular: "article"
+            widget: list
+            summary: "{{fields.date}} — {{fields.titre}}"
+            fields:
+              - { name: journal, label: "Journal", widget: string }
+              - { name: date, label: "Date de parution", widget: datetime, time_format: false, format: "YYYY-MM-DD" }
+              - { name: titre, label: "Titre de l’article", widget: string }
+              - { name: auteur, label: "Auteur ou autrice", widget: string }
+              - { name: resume, label: "Résumé", widget: text, hint: "Italique : *comme ceci*. Un retour à la ligne crée un saut de ligne." }
+              - { name: image, label: "Numérisation ou photo", widget: image }
+              - { name: alt, label: "Description de l’image", widget: string }
+              - { name: document, label: "Article complet (image ou PDF, facultatif)", widget: file, required: false }
+          - { name: appel, label: "Phrase de fin de page", widget: string }
+
+      - name: site
+        label: "Réglages du site"
+        file: contenu/site.json
+        fields:
+          - { name: nom, label: "Nom", widget: string }
+          - { name: profession, label: "Profession", widget: string }
+          - { name: devise, label: "Devise du pied de page", widget: string }
+          - name: slogan
+            label: "Slogan manuscrit (en-tête)"
+            widget: object
+            fields:
+              - { name: image, label: "Image", widget: image }
+              - { name: alt, label: "Texte du slogan", widget: string }
+          - { name: telephone, label: "Téléphone", widget: string }
+          - { name: courriel, label: "Courriel", widget: string }
+          - { name: facebook, label: "Page Facebook", widget: string }

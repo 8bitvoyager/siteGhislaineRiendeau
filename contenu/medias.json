@@ -1,0 +1,44 @@
+{
+  "titre": "Médias",
+  "accroche": "Dans la presse",
+  "introduction": "Articles consacrés à mes expositions et à mes ateliers. Cliquez sur un article pour le lire en entier.",
+  "citation": {
+    "texte": "Mélange des influences de peintures anciennes avec des moyens d’expression plus contemporains.",
+    "source": "Le Devoir",
+    "image": "/assets/images/evenements/empreintes-du-temps.webp",
+    "oeuvre": "Empreintes du Temps"
+  },
+  "articles": [
+    {
+      "journal": "Journal de Lévis",
+      "date": "2023-10-24",
+      "titre": "Deuxième exposition solo pour Ghislaine Riendeau",
+      "auteur": "Catherine D’Amours",
+      "resume": "L’exposition *Mémoire des lieux*, présentée à la Galerie d’art des Deux-Ponts du 19 octobre au 26 novembre 2023, explore trois mémoires : ancestrale, instinctive et sensorielle. Quatre des toiles offraient une expérience enrichie avec l’application Artivive.",
+      "image": "/assets/images/medias/journal-de-levis-2023.webp",
+      "alt": "Numérisation de l’article du Journal de Lévis, avec Ghislaine Riendeau à côté de sa toile Migration.",
+      "document": "/assets/images/medias/journal-de-levis-2023.webp"
+    },
+    {
+      "journal": "Le Journal de Chambly",
+      "date": "2020-10-04",
+      "titre": "Une artiste aux toiles vivantes",
+      "auteur": "Chloé-Anne Touma",
+      "resume": "Retour sur le vernissage de *Traces humaines et animales* au Corps de garde du Fort-Chambly, le 26 septembre 2020, maintenu malgré l’annulation des autres activités des Journées de la culture.",
+      "image": "/assets/images/medias/journal-de-chambly-2020.webp",
+      "alt": "Numérisation de l’article du Journal de Chambly, avec Ghislaine Riendeau devant sa toile Pauses Migratoires III.",
+      "document": "/assets/images/medias/journal-de-chambly-2020.webp"
+    },
+    {
+      "journal": "Presse locale",
+      "date": "2018-10-18",
+      "titre": "D’un atelier est née une exposition",
+      "auteur": "Aude Malaret",
+      "resume": "Les participants d’un atelier de création animé par Ghislaine Riendeau exposent leurs œuvres, certificats en main.",
+      "image": "/assets/images/medias/dun-atelier-est-nee-une-exposition-2018.webp",
+      "alt": "Ghislaine Riendeau entourée des jeunes participants de l’atelier, certificats en main, devant leurs œuvres exposées.",
+      "document": "/assets/images/medias/dun-atelier-est-nee-une-exposition-2018.pdf"
+    }
+  ],
+  "appel": "Journaliste ou organisateur d’exposition ?"
+}

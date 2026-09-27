@@ -1,0 +1,147 @@
+{
+  "ordre": 4,
+  "titre": "Petits formats",
+  "sousTitre": "Petits mondes, grandes émotions",
+  "oeuvres": [
+    {
+      "titre": "Trilogie au bord de l’Eau",
+      "format": "5 × 7",
+      "image": "/assets/uploads/galerie/trilogie-au-bord-de-l-eau-5-x-7.webp"
+    },
+    {
+      "titre": "Le Rite du face-à-face",
+      "format": "7 × 5",
+      "image": "/assets/uploads/galerie/le-rite-du-face-a-face-7-x-5.webp"
+    },
+    {
+      "titre": "Silence sous Tension",
+      "format": "5 × 7",
+      "image": "/assets/uploads/galerie/silence-sous-tension-5-x-7.webp"
+    },
+    {
+      "titre": "Rose Poésie",
+      "format": "5 × 7",
+      "image": "/assets/uploads/galerie/rose-poesie-5-x-7.webp"
+    },
+    {
+      "titre": "Élégance 1-2",
+      "format": "6 × 6",
+      "image": "/assets/uploads/galerie/elegance-1-2-6-x-6.webp"
+    },
+    {
+      "titre": "Mains de Bienveillance",
+      "format": "8 × 8",
+      "image": "/assets/uploads/galerie/mains-de-bienveillance-8-x-8.webp"
+    },
+    {
+      "titre": "Chevaux en Cavale",
+      "format": "6 × 12",
+      "image": "/assets/uploads/galerie/chevaux-en-cavale-6-x-12.webp"
+    },
+    {
+      "titre": "Douce Marée",
+      "format": "4 × 4",
+      "image": "/assets/uploads/galerie/douce-maree-4-x-4.webp"
+    },
+    {
+      "titre": "Fossiles de Bronze",
+      "format": "9 × 12",
+      "image": "/assets/uploads/galerie/fossiles-de-bronze-9-x-12.webp"
+    },
+    {
+      "titre": "Féerie Automnale",
+      "format": "12 × 9",
+      "image": "/assets/uploads/galerie/feerie-automnale-12-x-9.webp"
+    },
+    {
+      "titre": "Méditation",
+      "format": "5 × 7",
+      "image": "/assets/uploads/galerie/meditation-5-x-7.webp"
+    },
+    {
+      "titre": "Écoute ton Inconscient",
+      "format": "5 × 7",
+      "image": "/assets/uploads/galerie/ecoute-ton-inconscient-5-x-7.webp"
+    },
+    {
+      "titre": "Que la Vie est douce",
+      "format": "8 × 6",
+      "image": "/assets/uploads/galerie/que-la-vie-est-douce-8-x-6.webp"
+    },
+    {
+      "titre": "La vie est belle",
+      "format": "4 × 4",
+      "image": "/assets/uploads/galerie/la-vie-est-belle-4-x-4.webp"
+    },
+    {
+      "titre": "L’Assurance du Sillage",
+      "format": "7 × 5",
+      "image": "/assets/uploads/galerie/l-assurance-du-sillage-7-x-5.webp"
+    },
+    {
+      "titre": "Halte sur Poussière",
+      "format": "5 × 7",
+      "image": "/assets/uploads/galerie/halte-sur-poussiere-5-x-7.webp"
+    },
+    {
+      "titre": "Confidence au Crépuscule",
+      "format": "5 × 7",
+      "image": "/assets/uploads/galerie/confidence-au-crepuscule-5-x-7.webp"
+    },
+    {
+      "titre": "Étude Tellurique",
+      "format": "5 × 7",
+      "image": "/assets/uploads/galerie/etude-tellurique-5-x-7.webp"
+    },
+    {
+      "titre": "Sous le ciel Boréal",
+      "format": "7 × 5",
+      "image": "/assets/uploads/galerie/sous-le-ciel-boreal-7-x-5.webp"
+    },
+    {
+      "titre": "Douce Traversée",
+      "format": "5 × 7",
+      "image": "/assets/uploads/galerie/douce-traversee-5-x-7.webp"
+    },
+    {
+      "titre": "Les Sentinelles au Pas",
+      "format": "7 × 5",
+      "image": "/assets/uploads/galerie/les-sentinelles-au-pas-7-x-5.webp"
+    },
+    {
+      "titre": "L’Assemblée des Neiges",
+      "format": "5 × 7",
+      "image": "/assets/uploads/galerie/l-assemblee-des-neiges-5-x-7.webp"
+    },
+    {
+      "titre": "Calme et Sérénité",
+      "format": "10 × 10",
+      "image": "/assets/uploads/galerie/calme-et-serenite-10-x-10.webp"
+    },
+    {
+      "titre": "Brume Côtière",
+      "format": "7 × 5",
+      "image": "/assets/uploads/galerie/brume-cotiere-7-x-5.webp"
+    },
+    {
+      "titre": "Nuée Rosée",
+      "format": "5 × 7",
+      "image": "/assets/uploads/galerie/nuee-rosee-5-x-7.webp"
+    },
+    {
+      "titre": "Sous l’averse Bleue",
+      "format": "8 × 10",
+      "image": "/assets/uploads/galerie/sous-l-averse-bleue-8-x-10.webp"
+    },
+    {
+      "titre": "Danse en Ligne",
+      "format": "10 × 8",
+      "image": "/assets/uploads/galerie/danse-en-ligne-10-x-8.webp"
+    },
+    {
+      "titre": "Constellation d’Oiseaux",
+      "format": "8 × 10",
+      "image": "/assets/uploads/galerie/constellation-d-oiseaux-8-x-10.webp"
+    }
+  ]
+}

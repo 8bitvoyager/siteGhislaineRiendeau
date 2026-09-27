@@ -1,0 +1,27 @@
+{
+  "ordre": 3,
+  "titre": "Traces de l’Humanité",
+  "sousTitre": "Mémoires partagées",
+  "oeuvres": [
+    {
+      "titre": "Mémoire Rupestre",
+      "format": "36 × 48",
+      "image": "/assets/uploads/galerie/memoire-rupestre-36-x-48.webp"
+    },
+    {
+      "titre": "La source de Lascaux",
+      "format": "9 × 12",
+      "image": "/assets/uploads/galerie/la-source-de-lascaux-9-x-12.webp"
+    },
+    {
+      "titre": "Rythme Équestre",
+      "format": "30 × 24",
+      "image": "/assets/uploads/galerie/rythme-equestre-30-x-24.webp"
+    },
+    {
+      "titre": "Les Fées de Lascaux",
+      "format": "20 × 16",
+      "image": "/assets/uploads/galerie/les-fees-de-lascaux-20-x-16.webp"
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+{
+  "titre": "À propos",
+  "accroche": "Vingt ans à peindre et à exposer au Québec",
+  "introduction": "Expositions solo et collectives, symposiums, ateliers de création et distinctions : voici mon parcours depuis 2006.",
+  "faitsSaillants": [
+    {
+      "etiquette": "Premier prix",
+      "valeur": "Concours d’œuvres d’art de Diffusion Culturelle Lévis, 2020"
+    },
+    {
+      "etiquette": "Collections publiques",
+      "valeur": "Villes de Lévis et de Montmagny"
+    },
+    {
+      "etiquette": "En galerie",
+      "valeur": "Galerie Le Vivoir, Saint-Jean-Port-Joli, depuis 2024"
+    },
+    {
+      "etiquette": "Engagement",
+      "valeur": "Vice-présidente de l’Association des artistes de la Rive-Sud, 2012-2016"
+    }
+  ],
+  "portrait": {
+    "image": "/assets/images/artiste/ghislaine-riendeau-dans-les-herbes-hautes.webp",
+    "alt": "Ghislaine Riendeau devant sa toile Dans les Herbes hautes."
+  },
+  "parcours": [
+    {
+      "ancre": "expositions",
+      "titre": "Expositions",
+      "groupes": [
+        {
+          "entrees": [
+            {
+              "texte": "Centre d’exposition Louise-Carrier, Lévis",
+              "date": "mai – juin 2026"
+            },
+            {
+              "texte": "Galerie Espace-Temps, Lévis",
+              "date": "sept. – oct. 2024"
+            },
+            {
+              "texte": "Galerie Le Vivoir, Saint-Jean-Port-Joli",
+              "date": "depuis mars 2024"
+            },
+            {
+              "texte": "Marché de Noël, Galerie Espace-Temps, Lévis",
+              "date": "nov. 2023 – févr. 2024"
+            },
+            {
+              "texte": "Exposition solo, Galerie des Deux-Ponts, Lévis",
+              "date": "oct. – nov. 2023"
+            },
+            {
+              "texte": "Exposition solo, Maison Gomin, Québec",
+              "date": "11 mai – 14 sept. 2022"
+            },
+            {
+              "texte": "Exposition *À l’Origine*, Centre culturel Bombardier",
+              "date": "mai – août 2021"
+            },
+            {
+              "texte": "Exposition solo, Corps de garde du Fort-Chambly, Chambly",
+              "date": "sept. 2020"
+            },
+            {
+              "texte": "Bibliothèque Albert-Rousseau, Lévis",
+              "date": "sept. – déc. 2018"
+            },
+            {
+              "texte": "Bibliothèque de Montmagny, série CN EXP’ART",
+              "date": "oct. 2017"
+            },
+            {
+              "texte": "Galerie d’art Gruais Grondin, Place de la Cité, Québec",
+              "date": "févr. – avril 2017"
+            },
+            {
+              "texte": "Maison de la Culture de Bellechasse, Saint-Damien",
+              "date": "avril 2017"
+            },
+            {
+              "texte": "Maison Thibault-Soulard, Saint-Augustin",
+              "date": "mars 2017"
+            },
+            {
+              "texte": "Bibliothèque Félix-Leclerc, Val-Bélair",
+              "date": "déc. 2016 – janv. 2017"
+            },
+            {
+              "texte": "Bibliothèque Marie-Victorin, L’Ancienne-Lorette",
+              "date": "nov. 2016"
+            },
+            {
+              "texte": "Bibliothèque L’Écrin, Lac-Beauport",
+              "date": "oct. 2016"
+            },
+            {
+              "texte": "Maison O’Neill, Québec",
+              "date": "sept. 2016"
+            },
+            {
+              "texte": "Galerie Alfred-Pellan, Québec",
+              "date": "août – sept. 2016"
+            },
+            {
+              "texte": "Bibliothèque Christine-Brouillet, Loretteville",
+              "date": "juin 2016"
+            },
+            {
+              "texte": "Bibliothèque Roger-Lemelin, Cap-Rouge",
+              "date": "nov. 2015 – janv. 2016"
+            },
+            {
+              "texte": "Centre culturel Marie-Fitzbach, Saint-Georges de Beauce",
+              "date": "sept. – nov. 2015"
+            },
+            {
+              "texte": "Atelier-galerie La Traversée, rue Saint-Louis, Lévis",
+              "date": "juillet 2015"
+            },
+            {
+              "texte": "Centre des congrès de Lévis",
+              "date": "mai – juillet 2015"
+            },
+            {
+              "texte": "Bibliothèque Édith-Poiré, Saint-Lambert",
+              "date": "mai 2015"
+            },
+            {
+              "texte": "Bibliothèque Francine-McKenzie, Saint-Jean-Chrysostome",
+              "date": "mars – avril 2015"
+            },
+            {
+              "texte": "Galerie des Deux-Ponts, Saint-Nicolas",
+              "date": "sept. 2014, avril 2017"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ancre": "collectives",
+      "titre": "Expositions collectives",
+      "groupes": [
+        {
+          "entrees": [
+            {
+              "texte": "Centre culturel Marie-Fitzbach, Saint-Georges de Beauce",
+              "date": "août – nov. 2023"
+            },
+            {
+              "texte": "AARS, CAM Lévis",
+              "date": "juin 2022, 2023"
+            },
+            {
+              "texte": "Bibliothèque Monique-Corriveau, Québec",
+              "date": "nov. – déc. 2018"
+            },
+            {
+              "texte": "Palais Montcalm, Québec",
+              "date": "sept. – oct. 2018"
+            },
+            {
+              "texte": "Château Frontenac, Québec",
+              "date": "mai 2018"
+            },
+            {
+              "texte": "Espace culturel du Quartier, Saint-Nicolas",
+              "date": "sept. 2017"
+            },
+            {
+              "texte": "Maison de la Culture de Bellechasse",
+              "date": "mai 2016"
+            },
+            {
+              "texte": "AARS, bibliothèque J.-Gosselin, Charny",
+              "date": "janv. 2016"
+            },
+            {
+              "texte": "Musée Marius-Barbeau, Saint-Joseph-de-Beauce",
+              "date": "2016, 2020"
+            },
+            {
+              "texte": "AARS, bibliothèque A.-Rousseau, Saint-Étienne",
+              "date": "nov. 2015, oct. 2019"
+            },
+            {
+              "texte": "L’art au vignoble, Vignoble Le Nordet, Pintendre",
+              "date": "août 2015"
+            },
+            {
+              "texte": "Presbytère Saint-Nicolas, coup de cœur du public",
+              "date": "sept. 2013"
+            },
+            {
+              "texte": "L’Art à Laurier",
+              "date": "2013"
+            },
+            {
+              "texte": "Mécén’Art, Centre d’affaires Maizerets",
+              "date": "2013"
+            },
+            {
+              "texte": "Galerie d’art des Deux-Ponts, Saint-Nicolas, collectif de l’AARS",
+              "date": "2010-12-14-15-17-18-19-20-23"
+            },
+            {
+              "texte": "Presbytère Saint-Nicolas, collectif de l’AARS",
+              "date": "2012"
+            },
+            {
+              "texte": "Rallye Cultur’Art, Centre des congrès de Lévis",
+              "date": "2010, 2013"
+            },
+            {
+              "texte": "Centre Raymond-Blais, Lévis, collectif de l’AARS",
+              "date": "2010"
+            },
+            {
+              "texte": "Salon du cadeau, Presbytère Saint-Nicolas, AARS",
+              "date": "2009"
+            },
+            {
+              "texte": "Encadrements N. Desrochers, Saint-Nicolas",
+              "date": "2006-2007"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ancre": "symposiums",
+      "titre": "Symposiums",
+      "groupes": [
+        {
+          "entrees": [
+            {
+              "texte": "Symposium des Arts de Danville",
+              "date": "sept. 2026"
+            },
+            {
+              "texte": "L’Envolée des Pinceaux, Montmagny",
+              "date": "juin 2026"
+            },
+            {
+              "texte": "Symposium AAPARS, Centre Guy-Dupré, La Prairie et Centre Dulude, Saint-Bruno",
+              "date": "avril et oct. 2025"
+            },
+            {
+              "texte": "Festival des Arts de Valleyfield",
+              "date": "juillet 2022"
+            },
+            {
+              "texte": "Symposium provincial des Villages en couleurs, Petit-Saguenay",
+              "date": "oct. 2021, 2022, 2024"
+            },
+            {
+              "texte": "Symposium d’art contemporain de Rivière-Éternité",
+              "date": "oct. 2019"
+            },
+            {
+              "texte": "Symposium Visit’Arts, boulevard Champlain, Québec",
+              "date": "juin 2019"
+            },
+            {
+              "texte": "Domaine de Maizerets, Québec",
+              "date": "2018"
+            },
+            {
+              "texte": "Symposium Couleurs urbaines, Granby",
+              "date": "2017"
+            },
+            {
+              "texte": "Rendez-vous Art contemporain, Saint-Augustin",
+              "date": "2016"
+            },
+            {
+              "texte": "Symposium Artistes sur le champ, Chambly",
+              "date": "2016-2017"
+            },
+            {
+              "texte": "Village en Arts, Saint-Nicolas",
+              "date": "2011-12-14-15-18-19"
+            },
+            {
+              "texte": "Symposium de peinture de Boischatel",
+              "date": "2015"
+            },
+            {
+              "texte": "Symposium Créativités beauceronnes, Notre-Dame-des-Pins",
+              "date": "2014"
+            },
+            {
+              "texte": "Symposium de la Fondation Hélène-Sentenne, Candiac",
+              "date": "2014"
+            },
+            {
+              "texte": "Symposium Arts visuels du Parc des Chenaux, Trois-Rivières",
+              "date": "2014"
+            },
+            {
+              "texte": "Symposium Saint-Hubert, Rive-Sud de Montréal",
+              "date": "2013"
+            },
+            {
+              "texte": "Symposium de Beaumont",
+              "date": "2013-2023"
+            },
+            {
+              "texte": "Découvr’Arts, Cap-Rouge",
+              "date": "2012-2013"
+            },
+            {
+              "texte": "Éveil en Arts, Galeries de la Capitale, Québec",
+              "date": "2012"
+            },
+            {
+              "texte": "Symposium Arts et Rives, Lac-Etchemin",
+              "date": "2012"
+            },
+            {
+              "texte": "Mécén’Art, rue Cartier, Québec",
+              "date": "2012"
+            },
+            {
+              "texte": "Symposium de peinture, Galeries de Saint-Hyacinthe",
+              "date": "2012"
+            },
+            {
+              "texte": "Symposium du Sous-Bois, AARS, Lévis",
+              "date": "2010-11-12"
+            },
+            {
+              "texte": "Symposium Passion’Arts, AARS, Lévis",
+              "date": "2011"
+            },
+            {
+              "texte": "Journées de la culture, Ville de Lévis",
+              "date": "2010-2014"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ancre": "ateliers",
+      "titre": "Ateliers créatifs",
+      "groupes": [
+        {
+          "entrees": [
+            {
+              "texte": "*Sur les traces de Riopelle*, Galerie des Deux-Ponts",
+              "date": "mars 2026"
+            },
+            {
+              "texte": "*Sur les traces de Riopelle*, Centre Marie-Fitzbach, Saint-Georges",
+              "date": "sept. 2023"
+            },
+            {
+              "texte": "*L’Art rupestre*, Moulin La Lorraine",
+              "date": "juillet 2023"
+            },
+            {
+              "texte": "*À la Riopelle*, Moulin La Lorraine",
+              "date": "mars 2023"
+            },
+            {
+              "texte": "*Traces de Riopelle*, Ville de Lévis, Journées de la culture",
+              "date": "sept. 2022"
+            },
+            {
+              "texte": "*À la Riopelle*, Maison O’Neill",
+              "date": "juillet 2022"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ancre": "distinctions",
+      "titre": "Distinctions et affiliations",
+      "groupes": [
+        {
+          "sousTitre": "Prix et mentions",
+          "entrees": [
+            {
+              "texte": "Premier prix, Concours d’œuvres d’art de Diffusion Culturelle Lévis",
+              "date": "2020"
+            },
+            {
+              "texte": "Finaliste, Concours du Musée Marius-Barbeau, MRC de Lévis",
+              "date": "2020"
+            },
+            {
+              "texte": "Publicité, Magazin’Art",
+              "date": "printemps 2020"
+            },
+            {
+              "texte": "Finaliste, Concours de la Galerie Louise-Carrier, Lévis",
+              "date": "2019"
+            },
+            {
+              "texte": "Prix du jury, thématique *Blanc*, Symposium Artistes sur le champ, Chambly",
+              "date": "2016"
+            }
+          ]
+        },
+        {
+          "sousTitre": "Collections et vitrines",
+          "entrees": [
+            {
+              "texte": "Collection de la Ville de Montmagny",
+              "date": ""
+            },
+            {
+              "texte": "Collection de la Ville de Lévis",
+              "date": ""
+            },
+            {
+              "texte": "La Société V.I.A., Lévis",
+              "date": "3 toiles"
+            },
+            {
+              "texte": "Caisse Desjardins de la Chaudière, Saint-Nicolas",
+              "date": "10 toiles exposées"
+            },
+            {
+              "texte": "Centre de réadaptation en déficience physique Chaudière-Appalaches",
+              "date": ""
+            },
+            {
+              "texte": "Projet interculturel, Ville de Lévis",
+              "date": "sept. – oct. 2019"
+            },
+            {
+              "texte": "Vente aux enchères d’œuvres d’art, Diffusion Culturelle de Lévis",
+              "date": "2014-15-18-19-20-21-22-23-24-25"
+            }
+          ]
+        },
+        {
+          "sousTitre": "Affiliations",
+          "entrees": [
+            {
+              "texte": "Membre de l’Association des artistes de la Rive-Sud",
+              "date": ""
+            },
+            {
+              "texte": "Vice-présidente de l’Association des artistes de la Rive-Sud",
+              "date": "2012-2016"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ancre": "formations",
+      "titre": "Formations",
+      "groupes": [
+        {
+          "entrees": [
+            {
+              "texte": "Nathalie St-Pierre, artiste en arts visuels et enseignante, Lévis"
+            },
+            {
+              "texte": "Noëlla Dionne, artiste en création artistique et enseignante, Québec"
+            },
+            {
+              "texte": "Claire Lamarre, artiste peintre, enseignante à l’Université du troisième âge, Université Laval, Québec"
+            },
+            {
+              "texte": "Étude sur les grands maîtres québécois, Musée national des beaux-arts du Québec"
+            },
+            {
+              "texte": "Albini Leblanc, artiste peintre"
+            },
+            {
+              "texte": "Viviane Gruais, artiste en arts visuels et galeriste, Lévis"
+            },
+            {
+              "texte": "Gabriel Lalonde, artiste autodidacte, poète de l’art, Québec"
+            },
+            {
+              "texte": "Alex, artiste peintre représentée par la galerie Zen, Québec"
+            },
+            {
+              "texte": "Geneviève Ricard, artiste en arts visuels"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cours": {
+    "titre": "Cours privés",
+    "prix": "150 $",
+    "duree": "pour trois heures",
+    "description": "Le matériel est inclus : médium acrylique, pinceaux et autres outils. Seule la toile ou le canevas choisi pour peindre est en supplément.",
+    "bouton": "Réserver un cours"
+  }
+}

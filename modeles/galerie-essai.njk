@@ -1,0 +1,25 @@
+{% extends "base.njk" %}
+{% set titre = "Galerie (essai " + essai.lettre | upper + " · " + essai.nom + ") — " + site.nom %}
+{% set description = "Galerie des œuvres de " + site.nom + ", artiste peintre." %}
+{% set polices = ["cormorant-garamond-400-normal", "cormorant-garamond-400-italic", "jost-400-normal"] %}
+{% set styles = ["/css/interieur.css", "/css/galerie.css", "/galerie/essais/essais.css", "/galerie/essais/" + essai.lettre + "/style.css"] %}
+{% set scripts = ["/js/galerie.js", "/galerie/essais/essais.js", "/galerie/essais/" + essai.lettre + "/rendu.js"] %}
+{% set classe = "page-interieure page-galerie galerie-style-" + essai.lettre %}
+{% set actif = "galerie" %}
+{% block contenu %}
+    <section class="galerie-entete container" aria-labelledby="galerie-title">
+      <h1 id="galerie-title" class="page-eyebrow">Galerie</h1>
+      <p class="page-headline" data-serie-titre>{{ series[0].titre }}</p>
+      <p class="page-lede" data-serie-soustitre>{{ series[0].sousTitre }}</p>
+      <nav class="galerie-onglets" aria-label="Séries"></nav>
+    </section>
+    <div id="galerie" aria-live="polite"></div>
+{% endblock %}
+{% block apres %}
+  <nav class="essais-bascule" aria-label="Comparer les styles de galerie">
+        <a href="/galerie/" data-garder-ancre class="essais-retour">← Les 4 styles</a>
+{% for autre in essais %}
+        <a href="/galerie/essais/{{ autre.lettre }}/"{% if autre.lettre == essai.lettre %} aria-current="page"{% endif %} data-garder-ancre><b>{{ autre.lettre | upper }}</b> {{ autre.nom }}</a>
+{% endfor %}
+  </nav>
+{% endblock %}

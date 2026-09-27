@@ -1,0 +1,3 @@
+{% for lien in menu %}
+        <a href="{{ lien.url }}"{% if lien.id == actif %} aria-current="page"{% endif %}>{{ lien.titre }}</a>
+{% endfor %}

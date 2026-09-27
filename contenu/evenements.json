@@ -1,0 +1,46 @@
+{
+  "titre": "Événements",
+  "accroche": "Venez voir les toiles de près",
+  "introduction": "Expositions, vernissages, ateliers et ventes aux enchères. Chaque rencontre avec le public nourrit ma démarche.",
+  "evenements": [
+    {
+      "type": "Atelier",
+      "titre": "Galerie d’art des Deux-Ponts",
+      "lieu": "Lévis",
+      "debut": "2026-09-26",
+      "heure": "10:00",
+      "fin": "2026-09-26",
+      "detail": "Samedi 26 septembre, 10 h"
+    },
+    {
+      "type": "Vente aux enchères",
+      "titre": "Encan à l’Anglicane de Lévis",
+      "lieu": "Œuvres exposées à la Galerie Louise-Carrier, Lévis",
+      "debut": "2026-10-15",
+      "fin": "2026-11-18",
+      "detail": "Exposition du 15 octobre au 18 novembre. Encan le mercredi 18 novembre, 18 h 30."
+    },
+    {
+      "type": "Exposition",
+      "titre": "Galerie Miss Rey",
+      "lieu": "Chambly",
+      "debut": "2026-10-24",
+      "fin": "2026-12-20",
+      "detail": "Du 24 octobre au 20 décembre 2026. Vernissage le samedi 24 octobre, 14 h.",
+      "image": "/assets/images/evenements/memoires-des-parois.webp",
+      "oeuvre": "Mémoires des Parois",
+      "vedette": true
+    }
+  ],
+  "permanence": {
+    "titre": "Galerie Le Vivoir",
+    "lieu": "Saint-Jean-Port-Joli",
+    "depuis": "depuis mars 2024",
+    "description": "Certaines œuvres et leurs prix sont présentés sur le site de la galerie.",
+    "lien": "https://levivoir.com/ghislaine-riendeau",
+    "bouton": "Voir les œuvres au Vivoir",
+    "image": "/assets/images/evenements/le-bonheur-est-dans-le-pre.webp",
+    "oeuvre": "Le bonheur est dans le Pré"
+  },
+  "appel": "Vingt ans d’expositions et de symposiums au Québec."
+}

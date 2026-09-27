@@ -1,0 +1,52 @@
+{
+  "titre": "Démarche artistique",
+  "citation": {
+    "texte": "Comme la peinture possède sa beauté propre, on peut créer une beauté abstraite, pourvu qu’elle demeure picturale.",
+    "auteur": "Pablo Picasso"
+  },
+  "ouverture": {
+    "image": "/assets/images/hero/cta-migration-chromatique.webp",
+    "alt": "Migration Chromatique — œuvre abstraite de Ghislaine Riendeau aux bleus et ocres.",
+    "oeuvre": "Migration Chromatique",
+    "format": "13 × 17"
+  },
+  "palette": [
+    {
+      "nom": "Ocres",
+      "couleur": "#b48a55"
+    },
+    {
+      "nom": "Bleus",
+      "couleur": "#2f6c93"
+    },
+    {
+      "nom": "Orangés",
+      "couleur": "#d27a3a"
+    },
+    {
+      "nom": "Blancs",
+      "couleur": "#f3efe6"
+    }
+  ],
+  "gestes": [
+    "Pinceaux et spatules",
+    "Lavis et grattages",
+    "Superpositions",
+    "Transparences"
+  ],
+  "chapeau": "L’inspiration guidant ma création artistique réside dans une relation intime entre la nature et la spiritualité. Les éléments de base de mes compositions sont évoqués subtilement, laissant un espace d’interprétation vaste et une multitude de visions.",
+  "paragraphes": [
+    "Je suis à l’écoute du premier regard en faisant émerger l’émotion créatrice. Je décode les langages de la peinture en recherchant des endroits où la nature a laissé ses empreintes depuis l’âge de pierre jusqu’à nos jours. Cette approche mène à la réalisation de scènes d’aspect primitif, pures, naturelles et, par opposition à celles-ci, certaines scènes urbaines peuvent jaillir, m’interrogeant sur leur finitude dans l’espace-temps.",
+    "L’ambiance des endroits visités m’interpelle et permet de fixer un instant dans le temps, et de l’immortaliser : sorte de mémoire absorbant les équivalences plastiques qui seront retransmises et traitées par une gestuelle dynamique et synthétique.",
+    "Les contrastes de chaud et froid font partie de l’expérimentation essentielle dans mon travail. L’utilisation des pinceaux et des spatules, les lavis et les grattages, les superpositions et les transparences sont autant de moyens formant une matrice pour l’exploration du sujet traité. La passion transmise se concrétise par le mouvement intuitif, les ombrages subjectifs ainsi que la synergie des couleurs. Les formes sont quelquefois simplifiées pour créer une homogénéité visuelle et esthétique."
+  ],
+  "bandeau": {
+    "image": "/assets/images/hero/hero-dans-les-herbes-hautes.webp",
+    "alt": "Dans les Herbes hautes — œuvre de Ghislaine Riendeau : lac, collines et oiseaux blancs dans les herbes ocre.",
+    "oeuvre": "Dans les Herbes hautes",
+    "format": "30 × 40"
+  },
+  "conclusion": "La nature dans ses états les plus simples m’offre des gammes de tons : d’ocres, de bleus, d’orangés et de blancs, me permettant d’en extirper leur essence afin de les utiliser autant dans des visuels primitifs que contemporains. Tous ces procédés procurent une singularité à ma recherche et à sa mise en scène.",
+  "pensee": "Aujourd’hui, peindre est devenu un irrésistible élan de vie, une passion qui me subjugue, qui me déborde. Comme l’humanité continue toujours d’évoluer, mon répertoire demeure une source inépuisable de langage artistique.",
+  "appel": "Voir cette démarche prendre forme sur la toile."
+}

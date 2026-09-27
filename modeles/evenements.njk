@@ -1,0 +1,65 @@
+{% extends "base.njk" %}
+{% set titre = evenements.titre + " — " + site.nom + ", artiste peintre" %}
+{% set description = "Expositions, vernissages, ateliers et ventes aux enchères de " + site.nom + ", artiste peintre." %}
+{% set polices = ["cormorant-garamond-400-normal", "jost-400-normal"] %}
+{% set styles = ["/css/interieur.css", "/css/evenements.css"] %}
+{% set scripts = ["/js/evenements.js"] %}
+{% set classe = "page-interieure page-evenements" %}
+{% set actif = "evenements" %}
+{% block contenu %}
+    <section class="page-heading container" aria-labelledby="evenements-title">
+      <h1 id="evenements-title" class="page-eyebrow">{{ evenements.titre }}</h1>
+      <p class="page-headline">{{ evenements.accroche }}</p>
+      <p class="page-lede">{{ evenements.introduction | enrichi }}</p>
+    </section>
+
+    <section class="agenda container" aria-labelledby="a-venir-title">
+      <h2 id="a-venir-title" class="section-label">À venir</h2>
+      <ol class="event-list" id="evenements-a-venir">
+{% for evenement in evenementsTries %}
+        <li class="event{% if evenement.image %} event-with-art{% endif %}" data-fin="{{ evenement.fin or evenement.debut }}">
+          <p class="event-when"><time datetime="{{ evenement.debut }}{% if evenement.heure %}T{{ evenement.heure }}{% endif %}"><span class="event-day">{{ evenement.debut | jour }}</span><span class="event-month">{{ evenement.debut | moisAnnee }}</span></time></p>
+          <div class="event-body">
+            <p class="event-type">{{ evenement.type }}</p>
+            <h3>{{ evenement.titre }}</h3>
+            <p class="event-where">{{ evenement.lieu }}</p>
+            <p class="event-detail">{{ evenement.detail | enrichi }}</p>
+          </div>
+{% if evenement.image %}
+          <figure class="event-figure">
+            {{ image(evenement.image, evenement.oeuvre + " — œuvre de " + site.nom + ".", { chargement: "lazy" }) }}
+            <figcaption>{{ evenement.oeuvre }}</figcaption>
+          </figure>
+{% endif %}
+        </li>
+{% endfor %}
+      </ol>
+    </section>
+
+    <section class="permanent" aria-labelledby="permanent-title">
+      <div class="permanent-inner container">
+        {{ image(evenements.permanence.image, evenements.permanence.oeuvre + " — œuvre de " + site.nom + ".", { classe: "permanent-art", chargement: "lazy" }) }}
+        <div class="permanent-copy">
+          <p class="section-label">En permanence</p>
+          <h2 id="permanent-title">{{ evenements.permanence.titre }}</h2>
+          <p class="permanent-place">{{ evenements.permanence.lieu }}, {{ evenements.permanence.depuis }}</p>
+          <p>{{ evenements.permanence.description | enrichi }}</p>
+          <a class="button" href="{{ evenements.permanence.lien }}">{{ evenements.permanence.bouton }} <span aria-hidden="true">⟶</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="agenda agenda-past container" aria-labelledby="passes-title" hidden>
+      <h2 id="passes-title" class="section-label">Récemment</h2>
+      <ol class="event-list" id="evenements-passes"></ol>
+    </section>
+
+    <section class="page-cta" aria-labelledby="evenements-cta-title">
+      <div class="page-cta-inner container">
+        <h2 id="evenements-cta-title">{{ evenements.appel }}</h2>
+        <div class="page-cta-actions">
+          <a class="button" href="/a-propos/#expositions">Voir le parcours complet <span aria-hidden="true">⟶</span></a>
+        </div>
+      </div>
+    </section>
+{% endblock %}

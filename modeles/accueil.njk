@@ -1,0 +1,101 @@
+{% extends "base.njk" %}
+{% set titre = site.nom + " — " + site.profession %}
+{% set description = accueil.description %}
+{% set polices = ["cormorant-garamond-400-normal", "jost-400-normal", "la-belle-aurore-400-normal"] %}
+{% set actif = "accueil" %}
+{% block contenu %}
+    <section class="hero" aria-labelledby="hero-title">
+      {{ image(accueil.hero.image, accueil.hero.alt, { classe: "hero-art", priorite: true }) }}
+      <div class="hero-inner container">
+        <aside class="hero-image-transcript visually-hidden" aria-label="Texte de la composition">{{ accueil.hero.transcription }}</aside>
+        <div class="hero-copy">
+          <h1 id="hero-title" class="hero-title"><span class="hero-title-opening"><span>Là</span> <span class="hero-title-small">où la</span></span><span class="hero-title-middle">nature <span class="hero-title-story">raconte</span></span><span class="hero-title-ending">l’humain</span></h1>
+          <p class="hero-profession">{{ accueil.hero.sousTitre | enrichi }}</p>
+          <a class="button button-light" href="/galerie/">{{ accueil.hero.bouton }} <span aria-hidden="true">⟶</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="series container" aria-labelledby="series-title">
+      <div class="section-heading">
+        <h2 id="series-title">{{ accueil.series.titre }}</h2>
+        <p class="series-headline">{{ accueil.series.accroche | enrichi }}</p>
+        <p class="series-description">{{ accueil.series.description | enrichi }}</p>
+        <a class="text-link" href="/galerie/">{{ accueil.series.lien }} <span aria-hidden="true">⟶</span></a>
+      </div>
+      <div class="series-grid">
+{% for carte in accueil.series.cartes %}
+        <a class="series-card" href="/galerie/#{{ carte.serie }}">
+          <div class="series-image">{{ image(carte.image, carte.oeuvre + " — œuvre de " + site.nom + ".", { chargement: "lazy" }) }}</div>
+          <h3>{{ carte.titre }}</h3>
+          <div class="series-caption"><p>{{ carte.legende }}</p></div>
+          <p class="artwork-title">{{ carte.oeuvre }}</p>
+        </a>
+{% endfor %}
+      </div>
+    </section>
+    <section class="approach" aria-labelledby="approach-title">
+      <figure class="approach-visual">
+        <div class="approach-painting">
+          {{ image(accueil.demarche.image, accueil.demarche.alt, { chargement: "lazy" }) }}
+        </div>
+        <blockquote>{{ accueil.demarche.citation | enrichi }}</blockquote>
+        <figcaption>{{ site.nom }}</figcaption>
+        <img class="painted-note" src="/assets/images/identite/trace-de-vie.png" alt="Traces de vie" width="1536" height="1024" loading="lazy">
+      </figure>
+      <div class="approach-copy">
+        <h2 id="approach-title">{{ accueil.demarche.titre }}</h2>
+        <div class="approach-prose">
+{% for paragraphe in accueil.demarche.paragraphes %}
+          <p>{{ paragraphe | enrichi }}</p>
+{% endfor %}
+        </div>
+        <a class="button" href="/demarche-artistique/">{{ accueil.demarche.bouton }} <span aria-hidden="true">⟶</span></a>
+      </div>
+      <div class="approach-detail">
+        {{ image(accueil.demarche.note.image, accueil.demarche.note.alt, { chargement: "lazy" }) }}
+      </div>
+    </section>
+    <section class="exhibitions container" aria-labelledby="exhibitions-title">
+      <h2 id="exhibitions-title">{{ accueil.evenements.titre }}</h2>
+      <div class="exhibitions-layout">
+        <div class="exhibitions-intro">
+          <p>{{ accueil.evenements.introduction | enrichi }}</p>
+          <a class="text-link" href="/evenements/">{{ accueil.evenements.lien }} <span aria-hidden="true">⟶</span></a>
+        </div>
+        <!-- Section alimentée par Événements (événement en vedette, galerie permanente) et Médias (citation). -->
+        <ol class="events-list">
+{% for evenement in evenementsVedette %}
+          <li>
+            {{ image(evenement.image, evenement.oeuvre + " — œuvre de " + site.nom + ".", { classe: "event-art", chargement: "lazy" }) }}
+            <p class="event-date">{{ evenement | periode }}</p>
+            <h3>{{ evenement.titre }}</h3>
+            <p class="event-place">{{ evenement.lieu }}</p>
+            <p class="event-work">{{ evenement.oeuvre }}</p>
+          </li>
+{% endfor %}
+          <li>
+            {{ image(evenements.permanence.image, evenements.permanence.oeuvre + " — œuvre de " + site.nom + ".", { classe: "event-art", chargement: "lazy" }) }}
+            <p class="event-date">En permanence</p>
+            <h3>{{ evenements.permanence.titre }}</h3>
+            <p class="event-place">{{ evenements.permanence.lieu }}</p>
+            <p class="event-work">{{ evenements.permanence.oeuvre }}</p>
+          </li>
+          <li class="press-mention">
+            {{ image(medias.citation.image, medias.citation.oeuvre + " — œuvre de " + site.nom + ".", { classe: "event-art", chargement: "lazy" }) }}
+            <p class="event-date">Presse</p>
+            <blockquote>« {{ medias.citation.texte | enrichi }} »</blockquote>
+            <cite>{{ medias.citation.source }}</cite>
+            <p class="event-work">{{ medias.citation.oeuvre }}</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="closing-invitation" aria-labelledby="invitation-title">
+      {{ image(accueil.invitation.image, "", { classe: "invitation-art", chargement: "lazy" }) }}
+      <div class="invitation-copy container">
+        <h2 id="invitation-title">{{ accueil.invitation.titre }}</h2>
+        <p>{{ accueil.invitation.texte | enrichi }}</p>
+        <a class="button button-light" href="/galerie/">{{ accueil.invitation.bouton }} <span aria-hidden="true">⟶</span></a>
+      </div>
+    </section>
+{% endblock %}

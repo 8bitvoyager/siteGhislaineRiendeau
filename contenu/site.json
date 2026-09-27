@@ -1,0 +1,12 @@
+{
+  "nom": "Ghislaine Riendeau",
+  "profession": "Artiste peintre",
+  "devise": "Art · Nature · Humanité",
+  "slogan": {
+    "image": "/assets/images/identite/slogan.png",
+    "alt": "L’art comme empreinte du vivant."
+  },
+  "telephone": "418 580-3944",
+  "courriel": "grcr77@hotmail.com",
+  "facebook": "https://www.facebook.com/profile.php?id=100064694465759"
+}

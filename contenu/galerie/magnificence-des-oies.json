@@ -1,0 +1,47 @@
+{
+  "ordre": 2,
+  "titre": "Magnificence des Oies",
+  "sousTitre": "Nature en mouvement",
+  "oeuvres": [
+    {
+      "titre": "Matin frisquet sur la Ville",
+      "format": "20 × 16",
+      "image": "/assets/uploads/galerie/matin-frisquet-sur-la-ville-20-x-16.webp"
+    },
+    {
+      "titre": "Même les oies aiment l’Hiver",
+      "format": "16 × 20",
+      "image": "/assets/uploads/galerie/meme-les-oies-aiment-l-hiver-16-x-20.webp"
+    },
+    {
+      "titre": "Le bonheur est dans le Pré",
+      "format": "20 × 20",
+      "image": "/assets/uploads/galerie/le-bonheur-est-dans-le-pre-20-x-20.webp"
+    },
+    {
+      "titre": "Sur les Berges",
+      "format": "20 × 20",
+      "image": "/assets/uploads/galerie/sur-les-berges-20-x-20.webp"
+    },
+    {
+      "titre": "Dans les herbes Hautes",
+      "format": "30 × 40",
+      "image": "/assets/uploads/galerie/dans-les-herbes-hautes-30-x-40.webp"
+    },
+    {
+      "titre": "Le Pacte du Retour",
+      "format": "20 × 16",
+      "image": "/assets/uploads/galerie/le-pacte-du-retour-20-x-16.webp"
+    },
+    {
+      "titre": "Parade Nuptiale",
+      "format": "36 × 28",
+      "image": "/assets/uploads/galerie/parade-nuptiale-36-x-28.webp"
+    },
+    {
+      "titre": "Je me sens bien auprès de toi",
+      "format": "20 × 16",
+      "image": "/assets/uploads/galerie/je-me-sens-bien-aupres-de-toi-20-x-16.webp"
+    }
+  ]
+}

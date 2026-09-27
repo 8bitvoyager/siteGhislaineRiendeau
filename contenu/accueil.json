@@ -1,0 +1,73 @@
+{
+  "description": "Découvrez l’univers de Ghislaine Riendeau, artiste peintre québécoise : nature, mémoire, humanité et spiritualité.",
+  "hero": {
+    "image": "/assets/images/hero/header-22sept-v4.webp",
+    "alt": "Ghislaine Riendeau dans son atelier, dans une composition réunissant son portrait et sa peinture.",
+    "transcription": "Nature, Mémoire, Humanité, Spiritualité. « Chaque toile est une trace de ce qui nous relie. » — Ghislaine Riendeau",
+    "sousTitre": "Des paysages, des émotions,\nune mémoire vivante.",
+    "bouton": "Découvrir les œuvres"
+  },
+  "series": {
+    "titre": "Les séries",
+    "accroche": "Quatre regards\nsur un même élan",
+    "description": "Entre ciel et matière, mes toiles portent la mémoire du vivant. Traces d’humanité, élans de nature, elles racontent ce qui nous relie et l’émotion d’être au monde.",
+    "lien": "Explorer toutes les séries",
+    "cartes": [
+      {
+        "serie": "nouveautes",
+        "titre": "Nouveautés",
+        "legende": "Dernières créations",
+        "oeuvre": "Sous le Ciel d’Azur",
+        "image": "/assets/images/nouveautes/serie-sous-le-ciel-dazur.webp"
+      },
+      {
+        "serie": "magnificence-des-oies",
+        "titre": "Magnificence des Oies",
+        "legende": "Nature en mouvement",
+        "oeuvre": "Dans les Herbes hautes",
+        "image": "/assets/images/hero/hero-dans-les-herbes-hautes.webp"
+      },
+      {
+        "serie": "traces-de-lhumanite",
+        "titre": "Traces de l’Humanité",
+        "legende": "Mémoires partagées",
+        "oeuvre": "Mémoire Rupestre",
+        "image": "/assets/images/humanite/serie-memoire-rupestre.webp"
+      },
+      {
+        "serie": "petits-formats",
+        "titre": "Petits formats",
+        "legende": "Petits mondes, grandes émotions",
+        "oeuvre": "Sous l’averse Bleue",
+        "image": "/assets/images/petits-formats/serie-sous-laverse-bleue.webp"
+      }
+    ]
+  },
+  "demarche": {
+    "titre": "Démarche artistique",
+    "citation": "« Peindre est devenu\nun irrésistible\nélan de vie. »",
+    "image": "/assets/images/hero/hero-dans-les-herbes-hautes.webp",
+    "alt": "Détail de l’œuvre Dans les Herbes hautes.",
+    "paragraphes": [
+      "Ma création puise dans une relation intime entre la nature et la spiritualité. Les empreintes laissées depuis l’âge de pierre nourrissent mes compositions et ouvrent un vaste espace d’interprétation.",
+      "Pinceaux, spatules, lavis, grattages et transparences accompagnent une gestuelle intuitive. J’explore les contrastes de chaud et de froid, les ombrages et le dialogue des couleurs.",
+      "Ocres, bleus, orangés et blancs composent un langage où se rencontrent nature et humanité."
+    ],
+    "bouton": "En savoir plus",
+    "note": {
+      "image": "/assets/images/identite/quote-pinceaux.webp",
+      "alt": "Pinceaux d’atelier et note : Observer, Ressentir, Tracer, Transmettre."
+    }
+  },
+  "evenements": {
+    "titre": "Événements et mention",
+    "introduction": "Mes œuvres sont présentées dans des galeries, des symposiums et différents lieux d’exposition au Québec. Ces rencontres sont des moments privilégiés de partage et nourrissent ma démarche artistique.",
+    "lien": "Voir tous les événements"
+  },
+  "invitation": {
+    "titre": "L’art nous relie.",
+    "texte": "Découvrez un univers où nature, humanité et émotion se rencontrent.",
+    "bouton": "Découvrir les œuvres",
+    "image": "/assets/images/hero/hero-dans-les-herbes-hautes.webp"
+  }
+}

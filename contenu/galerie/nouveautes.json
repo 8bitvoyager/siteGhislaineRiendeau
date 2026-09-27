@@ -1,0 +1,142 @@
+{
+  "ordre": 1,
+  "titre": "Nouveautés",
+  "sousTitre": "Dernières créations",
+  "oeuvres": [
+    {
+      "titre": "Sur le fil doré du Rivage",
+      "format": "30 × 15",
+      "image": "/assets/uploads/galerie/sur-le-fil-dore-du-rivage-30-x-15.webp"
+    },
+    {
+      "titre": "Parfum Sauvage du Marais",
+      "format": "15 × 30",
+      "image": "/assets/uploads/galerie/parfum-sauvage-du-marais-15-x-30.webp"
+    },
+    {
+      "titre": "Sous le ciel d’Azur",
+      "format": "20 × 20",
+      "image": "/assets/uploads/galerie/sous-le-ciel-d-azur-20-x-20.webp"
+    },
+    {
+      "titre": "Symphonie au bleu Lunaire",
+      "format": "10 × 8",
+      "image": "/assets/uploads/galerie/symphonie-au-bleu-lunaire-10-x-8.webp"
+    },
+    {
+      "titre": "Horizons Cuivrés",
+      "format": "12 × 9",
+      "image": "/assets/uploads/galerie/horizons-cuivres-12-x-9.webp"
+    },
+    {
+      "titre": "Banquet de la Rive",
+      "format": "24 × 24",
+      "image": "/assets/uploads/galerie/banquet-de-la-rive-24-x-24.webp"
+    },
+    {
+      "titre": "Murmure des Lagunes",
+      "format": "12 × 9",
+      "image": "/assets/uploads/galerie/murmure-des-lagunes-12-x-9.webp"
+    },
+    {
+      "titre": "Rassemblement",
+      "format": "12 × 9",
+      "image": "/assets/uploads/galerie/rassemblement-12-x-9.webp"
+    },
+    {
+      "titre": "Bécassines dans le Pré",
+      "format": "16 × 8",
+      "image": "/assets/uploads/galerie/becassines-dans-le-pre-16-x-8.webp"
+    },
+    {
+      "titre": "Un silence qui m’inspire",
+      "format": "24 × 30",
+      "image": "/assets/uploads/galerie/un-silence-qui-m-inspire-24-x-30.webp"
+    },
+    {
+      "titre": "Battements libres",
+      "format": "20 × 11",
+      "image": "/assets/uploads/galerie/battements-libres-20-x-11.webp"
+    },
+    {
+      "titre": "Migration Chromatique",
+      "format": "13 × 17",
+      "image": "/assets/uploads/galerie/migration-chromatique-13-x-17.webp"
+    },
+    {
+      "titre": "Nuances de Vert et d’Ocre",
+      "format": "12 × 15",
+      "image": "/assets/uploads/galerie/nuances-de-vert-et-d-ocre-12-x-15.webp"
+    },
+    {
+      "titre": "Chemin des Oies",
+      "format": "10 × 14",
+      "image": "/assets/uploads/galerie/chemin-des-oies-10-x-14.webp"
+    },
+    {
+      "titre": "Un certain Rendez-vous !",
+      "format": "20 × 20",
+      "image": "/assets/uploads/galerie/un-certain-rendez-vous-20-x-20.webp"
+    },
+    {
+      "titre": "Le bonheur est dans le Pré",
+      "format": "20 × 20",
+      "image": "/assets/uploads/galerie/le-bonheur-est-dans-le-pre-20-x-20.webp"
+    },
+    {
+      "titre": "Les Fées de Lascaux",
+      "format": "20 × 16",
+      "image": "/assets/uploads/galerie/les-fees-de-lascaux-20-x-16.webp"
+    },
+    {
+      "titre": "Mémoires des Parois",
+      "format": "36 × 18",
+      "image": "/assets/uploads/galerie/memoires-des-parois-36-x-18.webp"
+    },
+    {
+      "titre": "Dans l’ombre des Cavernes",
+      "format": "20 × 20",
+      "image": "/assets/uploads/galerie/dans-l-ombre-des-cavernes-20-x-20.webp"
+    },
+    {
+      "titre": "L’Empreinte du Flair",
+      "format": "24 × 18",
+      "image": "/assets/uploads/galerie/l-empreinte-du-flair-24-x-18.webp"
+    },
+    {
+      "titre": "Présences Pariétales",
+      "format": "30 × 24",
+      "image": "/assets/uploads/galerie/presences-parietales-30-x-24.webp"
+    },
+    {
+      "titre": "Le Souffle du Troupeau",
+      "format": "12 × 9",
+      "image": "/assets/uploads/galerie/le-souffle-du-troupeau-12-x-9.webp"
+    },
+    {
+      "titre": "Fouge et Liberté",
+      "format": "9 × 12",
+      "image": "/assets/uploads/galerie/fouge-et-liberte-9-x-12.webp"
+    },
+    {
+      "titre": "Script Pariétal",
+      "format": "16 × 24",
+      "image": "/assets/uploads/galerie/script-parietal-16-x-24.webp"
+    },
+    {
+      "titre": "Peuple de la Paroi",
+      "format": "17 × 10",
+      "image": "/assets/uploads/galerie/peuple-de-la-paroi-17-x-10.webp"
+    },
+    {
+      "titre": "Figures en Chevauchement",
+      "format": "14 × 11",
+      "image": "/assets/uploads/galerie/figures-en-chevauchement-14-x-11.webp"
+    },
+    {
+      "titre": "L’Éveil Doré de la Paroi",
+      "format": "36 × 24",
+      "image": "/assets/uploads/galerie/l-eveil-dore-de-la-paroi-36-x-24.webp"
+    }
+  ]
+}

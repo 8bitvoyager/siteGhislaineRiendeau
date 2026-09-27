@@ -1,0 +1,63 @@
+{% extends "base.njk" %}
+{% set titre = propos.titre + " — " + site.nom + ", artiste peintre" %}
+{% set description = "Parcours de " + site.nom + ", artiste peintre : expositions, symposiums, ateliers créatifs, distinctions et formations." %}
+{% set polices = ["cormorant-garamond-400-normal", "jost-400-normal", "la-belle-aurore-400-normal"] %}
+{% set styles = ["/css/interieur.css", "/css/a-propos.css"] %}
+{% set classe = "page-interieure page-a-propos" %}
+{% set actif = "a-propos" %}
+{% block contenu %}
+    <section class="page-intro container" aria-labelledby="apropos-title">
+      <div>
+        <h1 id="apropos-title" class="page-eyebrow">{{ propos.titre }}</h1>
+        <p class="page-headline">{{ propos.accroche }}</p>
+        <p class="page-lede">{{ propos.introduction | enrichi }}</p>
+        <dl class="highlights">
+{% for fait in propos.faitsSaillants %}
+          <div><dt>{{ fait.etiquette }}</dt><dd>{{ fait.valeur }}</dd></div>
+{% endfor %}
+        </dl>
+      </div>
+      <figure class="page-figure apropos-portrait">
+        {{ image(propos.portrait.image, propos.portrait.alt, { priorite: true }) }}
+      </figure>
+    </section>
+
+    <div class="cv container">
+      <nav class="cv-nav" aria-label="Sections du parcours">
+        <p class="section-label">Parcours</p>
+        <ol>
+{% for section in propos.parcours %}
+          <li><a href="#{{ section.ancre }}">{{ section.titre }}</a></li>
+{% endfor %}
+          <li><a href="#cours">{{ propos.cours.titre }}</a></li>
+        </ol>
+      </nav>
+      <div class="cv-sections">
+{% for section in propos.parcours %}
+        <section class="cv-section" id="{{ section.ancre }}" aria-labelledby="{{ section.ancre }}-title">
+          <h2 id="{{ section.ancre }}-title">{{ section.titre }}</h2>
+{% for groupe in section.groupes %}
+{% if groupe.sousTitre %}
+          <h3 class="section-label">{{ groupe.sousTitre }}</h3>
+{% endif %}
+{% set sansDates = groupe.entrees | sansDates %}
+          <ul class="cv-list{% if sansDates %} cv-list-plain{% endif %}">
+{% for entree in groupe.entrees %}
+            <li><span>{{ entree.texte | enrichi }}</span>{% if not sansDates %}<span>{{ entree.date }}</span>{% endif %}</li>
+{% endfor %}
+          </ul>
+{% endfor %}
+        </section>
+
+{% endfor %}
+        <section class="cv-section" id="cours" aria-labelledby="cours-title">
+          <h2 id="cours-title">{{ propos.cours.titre }}</h2>
+          <div class="course">
+            <p class="course-price"><span>{{ propos.cours.prix }}</span> {{ propos.cours.duree }}</p>
+            <p>{{ propos.cours.description | enrichi }}</p>
+            <a class="button" href="/contact/">{{ propos.cours.bouton }} <span aria-hidden="true">⟶</span></a>
+          </div>
+        </section>
+      </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,12 @@
+  <footer class="site-footer">
+    <div class="footer-main container">
+      <a class="identity footer-identity" href="/" aria-label="{{ site.nom }} — Accueil">
+        <span class="identity-name">{{ site.nom }}</span>
+        <span class="identity-profession">{{ site.profession }}</span>
+      </a>
+      <nav class="footer-navigation" aria-label="Navigation de pied de page">
+{% include "partiels/navigation.njk" %}
+      </nav>
+      <p class="footer-devise">{{ site.devise }}</p>
+    </div>
+  </footer>
