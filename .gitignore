@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.wrangler/
+tmp/
+.dev.vars*
+.env*
+# Captures et rapports produits par scripts/verify-browser.mjs
+reference/*-[0-9]*.png
+!reference/apercu-*.png
+reference/verification*.json
+!reference/1a-22sept.png

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="none">
+  <defs>
+    <filter id="fibres" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".035 .19" numOctaves="3" seed="34" result="grain"/>
+      <feDisplacementMap in="SourceGraphic" in2="grain" scale="28.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g fill="white" filter="url(#fibres)">
+    <path opacity=".176" d="M-50-50H737L723 28 767 49 695 82 751 106 714 145 777 170 710 199 749 236 694 270 758 298 715 327 771 360 698 396 746 432 707 460 761 489 719 527 750 561 724 650H-50Z"/>
+    <path opacity=".432" d="M-50-50H660L633 32 706 55 610 90 681 116 627 154 712 179 639 206 685 243 607 278 694 303 630 338 711 368 619 403 682 438 632 472 702 500 613 538 685 570 646 650H-50Z"/>
+    <path d="M-50-50H522L495 29 594 54 479 83 555 112 507 147 620 175 520 201 573 230 486 265 597 297 515 329 605 361 489 399 564 433 507 465 600 499 480 535 571 568 529 650H-50Z"/>
+  </g>
+</svg>

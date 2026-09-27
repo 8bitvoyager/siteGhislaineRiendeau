@@ -1,0 +1,167 @@
+[
+  {
+    "local": "assets/images/nouveautes/serie-sous-le-ciel-dazur.webp",
+    "title": "Sous le Ciel d’Azur",
+    "usage": "Nouveautés",
+    "original": "reference/ref-22septembre/Sous le ciel d'Azur 20X20.jpg",
+    "source": "Original fourni par l’utilisateur le 22 septembre 2026",
+    "width": 1000,
+    "height": 1000,
+    "bytes": 360674
+  },
+  {
+    "local": "assets/images/hero/hero-dans-les-herbes-hautes.webp",
+    "title": "Dans les Herbes hautes",
+    "usage": "Magnificence des Oies, démarche et CTA",
+    "original": "reference/ref-22septembre/Dans les herbes Hautes 30X40.jpg",
+    "source": "Original fourni par l’utilisateur le 22 septembre 2026",
+    "width": 1800,
+    "height": 1328,
+    "bytes": 787428
+  },
+  {
+    "local": "assets/images/humanite/serie-memoire-rupestre.webp",
+    "title": "Mémoire Rupestre",
+    "usage": "Traces de l’Humanité",
+    "original": "reference/ref-22septembre/Mémoire Rupestre 36X48.jpg",
+    "source": "Original fourni par l’utilisateur le 22 septembre 2026",
+    "width": 1000,
+    "height": 755,
+    "bytes": 214514
+  },
+  {
+    "local": "assets/images/petits-formats/serie-sous-laverse-bleue.webp",
+    "title": "Sous l’averse Bleue",
+    "usage": "Petits formats",
+    "original": "reference/ref-22septembre/Sous l'averse Bleue 8 x 10.jpg",
+    "source": "Original fourni par l’utilisateur le 22 septembre 2026",
+    "width": 1000,
+    "height": 802,
+    "bytes": 287720
+  },
+  {
+    "local": "assets/images/evenements/memoires-des-parois.webp",
+    "title": "Mémoires des Parois",
+    "usage": "Galerie Miss Rey",
+    "original": "reference/ref-22septembre/Memoire-des-Parois-36X18.jpg",
+    "source": "Original fourni par l’utilisateur le 22 septembre 2026",
+    "width": 600,
+    "height": 1218,
+    "bytes": 257710
+  },
+  {
+    "local": "assets/images/evenements/le-bonheur-est-dans-le-pre.webp",
+    "title": "Le bonheur est dans le Pré",
+    "usage": "Galerie Le Vivoir",
+    "original": "reference/ref-22septembre/Le bonheur est dans le Pré 20 X 20.jpg",
+    "source": "Original fourni par l’utilisateur le 22 septembre 2026",
+    "width": 700,
+    "height": 710,
+    "bytes": 164572
+  },
+  {
+    "local": "assets/images/evenements/empreintes-du-temps.webp",
+    "title": "Empreintes du Temps",
+    "usage": "Mention Le Devoir",
+    "original": "reference/ref-22septembre/Empreinte du Temps 36X36.jpg",
+    "source": "Original fourni par l’utilisateur le 22 septembre 2026",
+    "width": 700,
+    "height": 698,
+    "bytes": 216542
+  },
+  {
+    "local": "assets/images/artiste/ghislaine-riendeau-devant-une-toile.webp",
+    "title": "Ghislaine Riendeau devant une toile",
+    "usage": "Portrait archivé",
+    "page": "https://ghislaineriendeau.com/contact/",
+    "originalUrl": "https://ghislaineriendeau.com/wp-content/uploads/2024/09/Ghislaine-11-09-24.jpg",
+    "original": "assets/images/originals/Ghislaine-11-09-24.jpg",
+    "width": 1400,
+    "height": 972,
+    "bytes": 302818
+  },
+  {
+    "local": "assets/images/hero/cta-migration-chromatique.webp",
+    "title": "Migration Chromatique",
+    "usage": "Détail décoratif de la démarche",
+    "page": "https://ghislaineriendeau.com/nouveautes/",
+    "originalUrl": "https://ghislaineriendeau.com/wp-content/uploads/2026/03/Migration-Chromatique-13X17.jpg",
+    "original": "assets/images/originals/Migration-Chromatique-13X17.jpg",
+    "width": 1600,
+    "height": 1196,
+    "bytes": 695362
+  },
+  {
+    "local": "assets/images/hero/header-22sept-v3.webp",
+    "title": "Ghislaine Riendeau dans son atelier et composition peinte",
+    "usage": "Hero",
+    "original": "reference/ref-22septembre/header-22sept-v3.png",
+    "source": "Composition fournie par l’utilisateur",
+    "width": 1916,
+    "height": 821,
+    "bytes": 496484
+  },
+  {
+    "local": "assets/images/identite/slogan.png",
+    "title": "L’art comme empreinte du vivant.",
+    "usage": "Slogan du header",
+    "original": "reference/ref-22septembre/slogan.png",
+    "width": 2172,
+    "height": 724,
+    "bytes": 259946
+  },
+  {
+    "local": "assets/images/hero/masque-lavis.svg",
+    "title": "Masque de lavis irrégulier",
+    "usage": "Ombre du sous-titre et citation artistique",
+    "source": "SVG créé pour le site",
+    "width": 600,
+    "height": 300,
+    "bytes": 789
+  },
+  {
+    "local": "assets/images/hero/masque-debordement.svg",
+    "title": "Bords de peinture irréguliers",
+    "usage": "Débordement du visuel de la citation",
+    "source": "SVG créé pour le site",
+    "width": 700,
+    "height": 600,
+    "bytes": 684
+  },
+  {
+    "local": "assets/images/identite/trace-de-vie.png",
+    "title": "Traces de vie",
+    "usage": "Lettrage décoratif de la démarche",
+    "original": "reference/ref-22septembre/traceDeVie.png",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 1118841
+  },
+  {
+    "local": "assets/images/hero/masque-navigation.svg",
+    "title": "Lisière peinte de la navigation",
+    "usage": "Bord inférieur du voile de navigation",
+    "source": "SVG créé pour le site",
+    "width": 1400,
+    "height": 120,
+    "bytes": 670
+  },
+  {
+    "local": "assets/images/identite/quote-pinceaux.webp",
+    "title": "Observer, Ressentir, Tracer, Transmettre",
+    "usage": "Visuel de droite de la démarche",
+    "original": "reference/ref-22septembre/quote-pinceaux.png",
+    "width": 900,
+    "height": 1125,
+    "bytes": 234558
+  },
+  {
+    "local": "assets/images/hero/masque-transition-pinceau.svg",
+    "title": "Transition en coups de pinceau",
+    "usage": "Fondu irrégulier entre la toile et le papier beige",
+    "source": "SVG créé pour le site",
+    "width": 800,
+    "height": 600,
+    "bytes": 1040
+  }
+]

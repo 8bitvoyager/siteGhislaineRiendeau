@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 120" preserveAspectRatio="none">
+  <defs>
+    <filter id="lisiere" x="-2%" y="-20%" width="104%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency=".085 .2" numOctaves="3" seed="8" result="grain"/>
+      <feDisplacementMap in="SourceGraphic" in2="grain" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <path fill="white" filter="url(#lisiere)" d="M-20 -30 H1420 V106 L1350 109 1300 103 1230 108 1170 105 1120 112 1050 106 990 110 920 104 865 111 800 106 740 113 680 108 620 111 550 105 480 110 420 107 350 114 280 108 210 112 140 106 70 110 -20 106 Z"/>
+</svg>
